@@ -12,19 +12,15 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'buttery' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'buttery' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'buttery' ), 'buttery', '<a href="http://underscores.me/">Sonia Lau</a>' );
-				?>
-		</div><!-- .site-info -->
+		<h2>Let's Connect!</h2>
+		<h2>sonialau5268@gmail.com</h2>
+
+		<div class="social-media-icons">
+			<img src="" alt="LinkedIn">
+			<img src="" alt="Instagram">
+			<img src="" alt="GitHub">
+		</div><!-- end social media logos -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
