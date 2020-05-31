@@ -181,3 +181,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Custom Post Types & Taxonomies
+ */
+require get_template_directory() . '/inc/cpt-taxonomy.php';
+
+// Block functionality for home page
+function my_allowed_block_types( $allowed_block_types, $post ) {
+    if ( 8 === $post->ID || 12 === $post->ID ) {
+       return array( 'core/paragraph');
+    } else {
+       return $allowed_block_types;
+	}
+}
+add_filter( 'allowed_block_types', 'my_allowed_block_types', 10, 2);
+
+
+
+?>
