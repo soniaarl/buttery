@@ -43,7 +43,8 @@ get_header();
 
 			<p class="design-tools">//<?php echo $tools?></p>
 			<p class="design-description"><?php echo $description?></p>
-			<img src="<?php echo $image?>" alt="Colour swatches">
+			<!-- Check if image exists before outputting image tag -->
+			<?php if($image):?><img src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
 
 
 			<!-- Mockups -->
@@ -54,7 +55,8 @@ get_header();
 				$description = get_sub_field('description'); ?>
 
 				<p><?php echo $description?></p>
-            	<img src="<?php echo $image?>" alt="Mockups">
+				<!-- Check if image exists before outputting image tag -->
+				<?php if($image):?><img src="<?php echo $image?>" alt="Mockups"><?php endif; ?>
 			
         		<?php endwhile; ?>
 				</section>

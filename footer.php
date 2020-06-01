@@ -16,9 +16,9 @@
 		<h2>sonialau5268@gmail.com</h2>
 
 		<div class="social-media-icons">
-			<img src="" alt="LinkedIn">
-			<img src="" alt="Instagram">
-			<img src="" alt="GitHub">
+			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/linkedin.png'); ?>" alt="LinkedIn">
+			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/instagram.png'); ?>" alt="Instagram">
+			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/github.png'); ?>" alt="GitHub">
 		</div><!-- end social media logos -->
 
 	</footer><!-- #colophon -->

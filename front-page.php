@@ -21,7 +21,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' ); ?>
+			get_template_part( 'template-parts/content', 'notitle' ); ?>
 
 			<div class="portfolio-btn"><a href="#0">View Portfolio</a></div>
 
@@ -38,6 +38,7 @@ get_header();
 						$size = 'full' ?>
 
 						<h2><?php echo $title ?></h2> 
+						<img src="<?php echo $image?>" alt="Colourful spheres">
 						<p><?php echo $description?></p>
 						<!-- Display logo gallery -->
 						<div class="logos">
@@ -64,6 +65,7 @@ get_header();
 						$size = 'full' ?>
 
 						<h2><?php echo $title ?></h2> 
+						<img src="<?php echo $image?>" alt="Cute computer graphic">
 						<p><?php echo $description?></p>
 						<!-- Display logo gallery -->
 						<div class="logos">
