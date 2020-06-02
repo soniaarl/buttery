@@ -76,7 +76,7 @@ get_header();
 					$tools = get_sub_field('tools');
 					$description = get_sub_field('description'); ?>
 
-					<p><?php echo $tools ?></p>
+					<p>//<?php echo $tools ?></p>
 					<p><?php echo $description ?></p>
 
 				<?php endwhile; ?>

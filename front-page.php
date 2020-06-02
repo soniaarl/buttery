@@ -23,7 +23,7 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'notitle' ); ?>
 
-			<div class="portfolio-btn"><a href="#0">View Portfolio</a></div>
+			<div class="portfolio-btn"><a href="<?php echo esc_url(get_home_url().'/projects'); ?>">View Portfolio</a></div>
 
 			<!-- Designer -->
 			<section class="designer">

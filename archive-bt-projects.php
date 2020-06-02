@@ -14,25 +14,39 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
-				the_post();
+				the_post(); ?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				<div class="project-card">
+					<a href="<?php echo esc_url(get_permalink());?>">
+						<!-- Get Project Title -->
+						<h1><?php the_title(); ?></h1> <?php
 
+						// Get Project Image Card
+						if(function_exists('get_field')){
+							if(get_field('project_card')){?>
+								<img src="<?php esc_url( the_field('project_card') );?>" alt="Website device mockup"><?php
+							}
+						}
+
+						// Get Project Tool Logos 
+						$logos = get_field('tools_used');?>
+
+						<div class="logos">
+							<?php if( $logos ): ?>
+								<?php foreach( $logos as $image_id ): ?>
+									<?php echo wp_get_attachment_image( $image_id, $size ); ?>
+								<?php endforeach; ?>
+							<?php endif; ?> 
+						</div> <!-- end project tool logos -->
+					</a>
+				</div> <!-- end project card -->
+				
+				<?php
+				
 			endwhile;
 
 			the_posts_navigation();
