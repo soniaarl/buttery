@@ -13,6 +13,7 @@
  */
 
 get_header();
+get_template_part( 'template-parts/banner', 'none' ); //include banner
 ?>
 
 	<main id="primary" class="site-main">
@@ -21,7 +22,8 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'notitle' ); ?>
+			get_template_part( 'template-parts/content', 'notitle' ); //remove title
+			?>
 
 			<div class="portfolio-btn"><a href="<?php echo esc_url(get_home_url().'/projects'); ?>">View Portfolio</a></div>
 

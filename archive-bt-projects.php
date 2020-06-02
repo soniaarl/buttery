@@ -12,13 +12,23 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php $args = array(
+		'post_type' => 'bt-projects',
+		'posts_per_page' => -1,
+		// Set to ascending order:
+		'order' => 'ASC',
+		// Order by title:
+		'orderby' => 'title'
+		); ?>
 
+		<?php
+		/* Start the Loop */
+		$query = new WP_Query($args);
+		if ($query -> have_posts()){
+			while ($query -> have_posts()){
+			$query -> the_post(); ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post(); ?>
+				<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
 
 				<div class="project-card">
 					<a href="<?php echo esc_url(get_permalink());?>">
@@ -46,16 +56,9 @@ get_header();
 				</div> <!-- end project card -->
 				
 				<?php
-				
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+			}
+			wp_reset_postdata();
+		}
 		?>
 
 	</main><!-- #main -->
