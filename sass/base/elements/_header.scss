@@ -1,0 +1,18 @@
+.site-header {
+    background-color: #0E0E2B;
+    p {
+        margin: 0;
+    }
+    ul {
+        a {
+            color: $gold;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+    img{
+        width: 10%;
+        max-width: 80px;
+    }
+}
