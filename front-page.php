@@ -20,12 +20,22 @@ get_template_part( 'template-parts/banner', 'none' ); //include banner
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
+			the_post(); ?>
+			
+			<div class="profile-cta">
+				<!-- Desktop CTA image -->
+				<?php if(function_exists('get_field')){
+					if(get_field('desktop_image')){?>
+						<img class="desktop-devices" src="<?php echo get_field('desktop_image')?>" alt="Laptop, ipad, and cellphone">
+						<?php
+					}
+				}?>
 
-			get_template_part( 'template-parts/content', 'notitle' ); //remove title
-			?>
-
-			<div class="portfolio-btn"><a href="<?php echo esc_url(get_home_url().'/projects'); ?>">View Portfolio</a></div>
+				<div class="cta-text">
+					<?php get_template_part( 'template-parts/content', 'notitle' ); //remove title?>
+					<div class="portfolio-btn"><a href="<?php echo esc_url(get_home_url().'/projects'); ?>">View Portfolio</a></div>
+				</div><!-- end cta-text -->
+			</div><!-- end profile-cta -->
 
 			<!-- Designer -->
 			<section class="designer">
