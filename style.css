@@ -389,13 +389,15 @@ textarea { width: 100%; }
 
 .post-type-archive-bt-projects .project-card a { text-decoration: none; color: black; }
 
-.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 20%; right: 50%; font-size: 45px; text-transform: uppercase; transform: translate(50%, 50%); width: 400px; z-index: 2; color: white; }
+.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 15%; right: 50%; font-size: 8vw; text-transform: uppercase; transform: translate(50%, 50%); width: 400px; z-index: 2; color: white; }
 
-.post-type-archive-bt-projects .project-card .logos { margin: 10px 0 40px 0; }
+@media (min-width: 600px) { .post-type-archive-bt-projects .project-card h1 { font-size: 44px; top: 20%; } }
 
-.post-type-archive-bt-projects .project-card .logos img { height: 50px; width: auto; margin: 0 5px; }
+.post-type-archive-bt-projects .project-card .logos { margin: 10px 0 60px 0; }
 
-.post-type-archive-bt-projects .project-card .project-poster { border-radius: 25px; filter: brightness(50%); -webkit-filter: brightness(50%); -moz-filter: brightness(50%); }
+.post-type-archive-bt-projects .project-card .logos img { height: 8vw; width: auto; margin: 0 5px; max-height: 60px; }
+
+.post-type-archive-bt-projects .project-card .project-poster { border-radius: 25px; filter: brightness(50%); -webkit-filter: brightness(50%); -moz-filter: brightness(50%); box-shadow: 1px 1px 3px 1px #ecececa4; }
 
 /* Comments
 --------------------------------------------- */
