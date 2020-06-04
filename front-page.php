@@ -37,6 +37,8 @@ get_template_part( 'template-parts/banner', 'none' ); //include banner
 				</div><!-- end cta-text -->
 			</div><!-- end profile-cta -->
 
+
+			<div class="skills-cards">
 			<!-- Designer -->
 			<section class="designer">
 			<?php if( have_rows('designer') ):
@@ -50,7 +52,7 @@ get_template_part( 'template-parts/banner', 'none' ); //include banner
 						$size = 'full' ?>
 
 						<h2><?php echo $title ?></h2> 
-						<img src="<?php echo $image?>" alt="Colourful spheres">
+						<img class="designer-logo card-logo" src="<?php echo $image?>" alt="Colourful spheres">
 						<p><?php echo $description?></p>
 						<!-- Display logo gallery -->
 						<div class="logos">
@@ -77,7 +79,7 @@ get_template_part( 'template-parts/banner', 'none' ); //include banner
 						$size = 'full' ?>
 
 						<h2><?php echo $title ?></h2> 
-						<img src="<?php echo $image?>" alt="Cute computer graphic">
+						<img class="developer-logo card-logo" src="<?php echo $image?>" alt="Cute computer graphic">
 						<p><?php echo $description?></p>
 						<!-- Display logo gallery -->
 						<div class="logos">
@@ -89,6 +91,7 @@ get_template_part( 'template-parts/banner', 'none' ); //include banner
 						</div>
 					<?php endwhile; ?>
 			</section> <!-- end of developer -->
+			</div> <!-- end skills-card -->
 			<?php endif; 
 
 

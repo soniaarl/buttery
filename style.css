@@ -326,13 +326,13 @@ textarea { width: 100%; }
 
 .page-links { clear: both; margin: 0 0 1.5em; }
 
-/* Galleries
+/* Pages
 --------------------------------------------- */
 .post-8 img { width: 60%; }
 
 .desktop-devices { display: none; }
 
-.profile-cta { text-align: center; }
+.profile-cta { text-align: center; margin: 25px 0; }
 
 .profile-cta article { margin-bottom: 15px; }
 
@@ -340,13 +340,36 @@ textarea { width: 100%; }
 
 .profile-cta p { margin: 0; }
 
-.profile-cta a { text-decoration: none; background-color: #0E0E2B; display: block; width: 90%; margin: auto; color: #F1D895; padding: 10px; border: 1px solid #F1D895; border-radius: 7px; }
+.profile-cta a { text-decoration: none; background-color: #0E0E2B; display: block; width: 95%; margin: auto; color: #F1D895; padding: 10px; border: 1px solid #F1D895; border-radius: 7px; }
 
 @media (min-width: 750px) { .desktop-devices { display: block; width: 70%; }
 	.post-8 img { display: none; }
-	.profile-cta { display: flex; max-width: 1200px; margin: auto; }
-	.profile-cta .cta-text { width: 30%; }
+	.profile-cta { display: flex; max-width: 1100px; margin: 30px auto; }
+	.profile-cta .cta-text { width: 30%; margin-left: 20px; position: relative; }
+	.profile-cta .cta-text .entry-content { position: absolute; width: 100%; top: 40%; }
+	.profile-cta .cta-text .portfolio-btn { position: absolute; width: 100%; bottom: 5%; }
 	.profile-cta .post-8 { margin: 0; } }
+
+.page-id-8 main { padding: 0 10px 25px 10px; }
+
+.page-id-8 .designer, .page-id-8 .developer { box-shadow: 1px 1px 3px 1px #ecececa4; border: 0.5px solid #eeeeee8a; border-radius: 10px; text-align: center; padding: 20px 10px; max-width: 500px; }
+
+@media (max-width: 1000px) { .page-id-8 .designer, .page-id-8 .developer { margin: 15px auto 0; } }
+
+.page-id-8 .designer h2, .page-id-8 .developer h2 { margin: 5px 0 10px 0; }
+
+.page-id-8 .designer .card-logo, .page-id-8 .developer .card-logo { margin: 20px 0; }
+
+.page-id-8 .designer .designer-logo, .page-id-8 .developer .designer-logo { width: 175px; }
+
+.page-id-8 .designer .developer-logo, .page-id-8 .developer .developer-logo { width: 200px; }
+
+.page-id-8 .designer p, .page-id-8 .developer p { padding: 0 55px; margin: 10px 0 20px 0; }
+
+.page-id-8 .logos img { height: 50px; width: auto; margin: 20px 5px; }
+
+@media (min-width: 1000px) { .skills-cards { display: flex; justify-content: center; margin: auto; }
+	.designer, .developer { margin: 10px; } }
 
 /* Comments
 --------------------------------------------- */
