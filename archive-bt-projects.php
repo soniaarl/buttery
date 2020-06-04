@@ -13,6 +13,8 @@ get_header();
 	<main id="primary" class="site-main">
 
 	<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
+	
+	<div class="content">
 
 		<?php $args = array(
 		'post_type' => 'bt-projects',
@@ -23,6 +25,8 @@ get_header();
 		'orderby' => 'title'
 		); ?>
 
+
+		
 		<?php
 		/* Start the Loop */
 		$query = new WP_Query($args);
@@ -54,13 +58,15 @@ get_header();
 						</div> <!-- end project tool logos -->
 					</a>
 				</div> <!-- end project card -->
-				
+			
 				<?php
 			}
 			wp_reset_postdata();
 		}
 		?>
 
+	</div> <!-- end content -->
+	
 	</main><!-- #main -->
 
 <?php
