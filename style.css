@@ -232,7 +232,9 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .site-header ul a:hover { color: white; }
 
-.site-header img { width: 10%; max-width: 80px; }
+.site-header img { width: 10%; max-width: 70px; }
+
+.site-header .site-title { padding: 20px 20px; text-align: left; }
 
 .site-footer { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 20px 0; }
 
@@ -271,9 +273,9 @@ textarea { width: 100%; }
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.banner { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 30px 0; margin-bottom: 20px; }
+.banner { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 0 0 30px 0; margin-bottom: 20px; }
 
-.banner img { width: 25%; max-width: 200px; border: 4px solid #F1D895; padding: 10px; border-radius: 20px; margin-bottom: 15px; }
+.banner img { width: 20%; max-width: 150px; border: 3px solid #F1D895; padding: 7px; border-radius: 20px; margin-bottom: 15px; }
 
 .banner h1 { margin: 0; font-size: 18px; }
 
@@ -370,6 +372,30 @@ textarea { width: 100%; }
 
 @media (min-width: 1000px) { .skills-cards { display: flex; justify-content: center; margin: auto; }
 	.designer, .developer { margin: 10px; } }
+
+.page-id-12 main { padding: 20px 20px; max-width: 800px; margin: auto; }
+
+.page-id-12 main .entry-content { margin-top: 0; }
+
+.page-id-12 main p:first-child { margin-top: 0; }
+
+@media (min-width: 500px) { .page-id-12 main { height: 70vh; } }
+
+.post-type-archive-bt-projects { text-align: center; }
+
+.post-type-archive-bt-projects main { padding: 15px; }
+
+.post-type-archive-bt-projects .project-card { position: relative; max-width: 600px; margin: auto; }
+
+.post-type-archive-bt-projects .project-card a { text-decoration: none; color: black; }
+
+.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 20%; right: 50%; font-size: 45px; text-transform: uppercase; transform: translate(50%, 50%); width: 400px; z-index: 2; color: white; }
+
+.post-type-archive-bt-projects .project-card .logos { margin: 10px 0 40px 0; }
+
+.post-type-archive-bt-projects .project-card .logos img { height: 50px; width: auto; margin: 0 5px; }
+
+.post-type-archive-bt-projects .project-card .project-poster { border-radius: 25px; filter: brightness(50%); -webkit-filter: brightness(50%); -moz-filter: brightness(50%); }
 
 /* Comments
 --------------------------------------------- */

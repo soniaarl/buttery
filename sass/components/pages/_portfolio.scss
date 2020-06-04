@@ -1,0 +1,42 @@
+// Portfolio page styles
+
+.post-type-archive-bt-projects {
+    text-align: center;
+    main {
+        padding: 15px;
+    }
+    .project-card {
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1 {
+            position: absolute;
+            top: 20%;
+            right: 50%;
+            font-size: 45px;
+            text-transform: uppercase;
+            transform: translate(50%, 50%);
+            width: 400px;
+            z-index: 2;
+            color: white;
+        }
+        .logos {
+            margin: 10px 0 40px 0;
+            img {
+                height: 50px;
+                width: auto;
+                margin: 0 5px;
+            }
+        }
+        .project-poster {
+            border-radius: 25px;
+            filter: brightness(50%);
+            -webkit-filter: brightness(50%);
+            -moz-filter: brightness(50%);
+        }
+    }
+}

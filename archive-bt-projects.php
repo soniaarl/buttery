@@ -12,6 +12,8 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+	<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
+
 		<?php $args = array(
 		'post_type' => 'bt-projects',
 		'posts_per_page' => -1,
@@ -28,18 +30,16 @@ get_header();
 			while ($query -> have_posts()){
 			$query -> the_post(); ?>
 
-				<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
-
 				<div class="project-card">
 					<a href="<?php echo esc_url(get_permalink());?>">
 						<!-- Get Project Title -->
-						<h1><?php the_title(); ?></h1> <?php
+						<h1><?php the_title(); ?></h1> 
 
-						// Get Project Image Card
-						if(function_exists('get_field')){
-							if(get_field('project_card')){?>
-								<img src="<?php esc_url( the_field('project_card') );?>" alt="Website device mockup"><?php
-							}
+						<!-- Get Project Image Card -->
+							<?php if(function_exists('get_field')){
+								if(get_field('project_card')){?>
+									<img class="project-poster" src="<?php esc_url( the_field('project_card') );?>" alt="Website device mockup">
+						<?php }
 						}
 
 						// Get Project Tool Logos 
