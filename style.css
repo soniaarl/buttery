@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
-html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+html { line-height: 1.15; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 /* Sections ========================================================================== */
 /** Remove the margin in all browsers. */
@@ -281,7 +281,7 @@ textarea { width: 100%; }
 
 .banner h1 { margin: 0; font-size: 4vw; width: 100%; }
 
-@media (min-width: 1200px) { .banner h1 { font-size: 36px; } }
+@media (min-width: 900px) { .banner h1 { font-size: 36px; } }
 
 .banner .banner-text { position: absolute; bottom: 10%; right: 50%; transform: translate(50%); width: 100%; }
 
@@ -290,7 +290,7 @@ textarea { width: 100%; }
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
-.main-navigation { display: block; border-top: 1px solid #F1D895; padding-bottom: 10px; height: 100px; width: 100%; overflow: hidden; position: fixed; bottom: 0; width: 100%; background-color: #0E0E2B; z-index: 999; }
+.main-navigation { display: block; border-top: 1px solid #F1D895; padding-bottom: 10px; height: 100px; box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.452); width: 100%; overflow: hidden; position: fixed; bottom: 0; width: 100%; background-color: #0E0E2B; z-index: 999; }
 
 .main-navigation ul { display: flex; list-style: none; margin: 0; padding-left: 0; justify-content: space-between; padding: 15px; }
 
@@ -330,6 +330,8 @@ textarea { width: 100%; }
 
 .contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 35px auto; }
 
+@media (min-width: 1000px) { .main-navigation { position: static; } }
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky { display: block; }
@@ -354,14 +356,14 @@ textarea { width: 100%; }
 
 .profile-cta p { margin: 0; }
 
-.profile-cta a { text-decoration: none; background-color: #0E0E2B; display: block; width: 95%; margin: auto; color: #F1D895; padding: 10px; border: 1px solid #F1D895; border-radius: 7px; }
+.profile-cta a { text-decoration: none; background-color: #0E0E2B; display: block; width: 95%; margin: auto; color: #F1D895; padding: 10px; border: 1px solid #F1D895; border-radius: 7px; box-shadow: 1px 1px 3px 1px #ecececa4; }
 
 @media (min-width: 750px) { .desktop-devices { display: block; width: 70%; }
 	.post-8 img { display: none; }
 	.profile-cta { display: flex; max-width: 1100px; margin: 30px auto; }
 	.profile-cta .cta-text { width: 30%; margin-left: 20px; position: relative; }
-	.profile-cta .cta-text .entry-content { position: absolute; width: 100%; top: 40%; }
-	.profile-cta .cta-text .portfolio-btn { position: absolute; width: 100%; bottom: 5%; }
+	.profile-cta .cta-text .entry-content { position: absolute; width: 100%; top: 30%; }
+	.profile-cta .cta-text .portfolio-btn { position: absolute; width: 100%; bottom: 7%; }
 	.profile-cta .post-8 { margin: 0; } }
 
 .page-id-8 main { padding: 0 10px 25px 10px; }
@@ -378,7 +380,7 @@ textarea { width: 100%; }
 
 .page-id-8 .designer .developer-logo, .page-id-8 .developer .developer-logo { width: 200px; }
 
-.page-id-8 .designer p, .page-id-8 .developer p { padding: 0 55px; margin: 10px 0 20px 0; }
+.page-id-8 .designer p, .page-id-8 .developer p { padding: 0 25px; margin: 10px 0 20px 0; }
 
 .page-id-8 .logos img { height: 10vw; width: auto; margin: 20px 5px; max-height: 50px; }
 

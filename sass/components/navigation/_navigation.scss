@@ -3,7 +3,7 @@
 	border-top: 1px solid $gold;
 	padding-bottom: 10px;
 	height: 100px;
-
+	box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.452);
 
 	// Make fixed bottom nav
 	width: 100%;
@@ -125,7 +125,7 @@
 	}
 }
 
-// Add icons to mobile nav bar
+// Styles for icons on mobile nav bar
 .home-icon {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -152,4 +152,11 @@
 	background-position: center;
 	padding-bottom: 46px;
 	background-size: 35px auto;
+}
+
+// Desktop navigation styles
+@media (min-width: 1000px){
+	.main-navigation {
+		position: static;
+	}
 }
