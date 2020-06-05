@@ -13,7 +13,7 @@
  */
 
 get_header();
-get_template_part( 'template-parts/banner', 'none' ); //include banner
+get_template_part( 'template-parts/banner'); //include banner
 ?>
 
 	<main id="primary" class="site-main">

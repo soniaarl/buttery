@@ -8,10 +8,11 @@
  */
 
 get_header();
+get_template_part( 'template-parts/banner'); //include banner
 ?>
 
 	<main id="primary" class="site-main">
-
+	
 	<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
 	
 	<div class="content">
@@ -43,6 +44,7 @@ get_header();
 							<?php if(function_exists('get_field')){
 								if(get_field('project_card')){?>
 									<img class="project-poster" src="<?php esc_url( the_field('project_card') );?>" alt="Website device mockup">
+									<h3 class="project-btn">View Project</h3>
 						<?php }
 						}
 

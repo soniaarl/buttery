@@ -15,17 +15,18 @@
         }
         h1 {
             position: absolute;
-            top: 15%;
+            top: 10%;
             right: 50%;
             font-size: 8vw;
             text-transform: uppercase;
             transform: translate(50%, 50%);
-            width: 400px;
+            display: block;
+            width: 100%;
             z-index: 2;
             color: white;
+            border-bottom: 2px solid $gold;
             @media (min-width: 600px){
-                font-size: 35px;
-                top: 20%;
+                font-size: 46px;
             }
         }
         .logos {
@@ -34,7 +35,7 @@
                 height: 8vw;
                 width: auto;
                 margin: 0 5px;
-                max-height: 60px;
+                max-height: 40px;
             }
         }
         .project-poster {
@@ -44,13 +45,46 @@
             -moz-filter: brightness(50%);
             box-shadow: $shadow;
         }
+        .project-btn {
+            position: absolute;
+            bottom: 20%;
+            right: 50%;
+            transform: translate(50%);
+            color: $gold;
+            background-color: $darkblue;
+            display: block;
+            width: 80%;
+            padding: 8px;
+            border: 2px solid $gold;
+            border-radius: 10px;
+        }
     }
 }
 
 @media (min-width: 1000px){
     .post-type-archive-bt-projects{
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
         .content {
             display: flex;
         }
+        .project-card {
+            width: 300px;
+            h1 {
+                font-size: 28px;
+                top: 13%;
+                transform: translate(50%);
+                padding-bottom: 5px;
+            }
+            .project-btn{
+                bottom: 35%;
+            }
+            .logos img {
+                height: 30px;
+            }
+        }
+        
     }
 }
