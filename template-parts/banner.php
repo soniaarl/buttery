@@ -9,5 +9,12 @@
     </div>
 </div>
 
+<style>
+    .banner {
+    background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/2020/06/felix-mittermeier-Knwea-mLGAg-unsplash.jpg')); ?>') ;
+    }
+</style>
+
+
 <?php
 

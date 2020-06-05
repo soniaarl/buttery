@@ -62,6 +62,26 @@
 				)
 			);
 			?>
+
+			<!-- Dynamically get file path for nav bar images -->
+			<style>
+				.home-icon {
+					background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/icons/nav-bar/home-office.png')); ?>') ;
+				}
+				.portfolio-icon {
+					background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/icons/nav-bar/suitcase.png')); ?>') ;
+				}
+				.about-icon {
+					background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/icons/nav-bar/woman.png')); ?>') ;
+				}
+				.contact-icon {
+					background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/icons/nav-bar/contact.png')); ?>') ;
+				}
+
+
+
+
+			</style>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

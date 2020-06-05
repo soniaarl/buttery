@@ -77,7 +77,7 @@ pre { font-family: monospace, monospace; font-size: 1em; }
 
 /* Text-level semantics ========================================================================== */
 /** Remove the gray background on active links in IE 10. */
-a { background-color: transparent; }
+a { background-color: transparent; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
 abbr[title] { border-bottom: none; text-decoration: underline; -webkit-text-decoration: underline dotted; text-decoration: underline dotted; }
@@ -238,7 +238,7 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .site-header .site-title { padding: 10px 20px; text-align: left; }
 
-.site-footer { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 20px 0; margin-bottom: 40px; }
+.site-footer { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 20px 0; margin-bottom: 100px; }
 
 .site-footer h2 { margin: 5px; font-size: 18px; }
 
@@ -275,11 +275,11 @@ textarea { width: 100%; }
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.banner { background-color: #0E0E2B; position: relative; color: #F1D895; text-align: center; padding: 0 0 30px 0; margin-bottom: 20px; height: 50vw; max-height: 600px; /* Create the parallax scrolling effect */ background-image: url("http://localhost/portfolio/wp-content/uploads/2020/06/felix-mittermeier-Knwea-mLGAg-unsplash.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.banner { background-color: #0E0E2B; position: relative; color: #F1D895; text-align: center; padding: 0 0 30px 0; margin-bottom: 20px; height: 50vw; max-height: 600px; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
 .banner img { position: absolute; bottom: 30%; transform: translate(-50%); width: 20%; max-width: 150px; border: 3px solid #F1D895; padding: 7px; border-radius: 20px; margin-bottom: 15px; }
 
-.banner h1 { margin: 0; font-size: 3vw; width: 100%; }
+.banner h1 { margin: 0; font-size: 4vw; width: 100%; }
 
 @media (min-width: 1200px) { .banner h1 { font-size: 36px; } }
 
@@ -322,13 +322,13 @@ textarea { width: 100%; }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { text-align: end; flex: 1 0 50%; }
 
-.home-icon { background-image: url("http://localhost/portfolio/wp-content/uploads/icons/nav-bar/home-office.png"); background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
+.home-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
 
-.portfolio-icon { background-image: url("http://localhost/portfolio/wp-content/uploads/icons/nav-bar/suitcase.png"); background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
+.portfolio-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
 
-.about-icon { background-image: url("http://localhost/portfolio/wp-content/uploads/icons/nav-bar/woman.png"); background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: auto 40px; }
+.about-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: auto 40px; }
 
-.contact-icon { background-image: url("http://localhost/portfolio/wp-content/uploads/icons/nav-bar/contact.png"); background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 35px auto; }
+.contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 35px auto; }
 
 /* Posts and pages
 --------------------------------------------- */
@@ -380,7 +380,7 @@ textarea { width: 100%; }
 
 .page-id-8 .designer p, .page-id-8 .developer p { padding: 0 55px; margin: 10px 0 20px 0; }
 
-.page-id-8 .logos img { height: 50px; width: auto; margin: 20px 5px; }
+.page-id-8 .logos img { height: 10vw; width: auto; margin: 20px 5px; max-height: 50px; }
 
 @media (min-width: 1000px) { .skills-cards { display: flex; justify-content: center; margin: auto; }
 	.designer, .developer { margin: 10px; } }
