@@ -146,6 +146,15 @@ function buttery_scripts() {
 	wp_enqueue_style( 'buttery-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'buttery-style', 'rtl', 'replace' );
 
+	// Enqueue JQuery
+	wp_enqueue_script(
+        'bt-animations', 
+        get_template_directory_uri() . '/js/animations.js', 
+        array( 'jquery' ), 
+        '20200609', 
+        true 
+    );
+
 	wp_enqueue_script( 'buttery-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

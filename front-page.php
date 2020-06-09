@@ -40,7 +40,7 @@ get_template_part( 'template-parts/banner'); //include banner
 
 			<div class="skills-cards">
 			<!-- Designer -->
-			<section class="designer">
+			<section id="designer" class="designer">
 			<?php if( have_rows('designer') ):
 					while( have_rows('designer') ): the_row(); 
 
