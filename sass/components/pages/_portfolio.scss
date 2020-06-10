@@ -2,6 +2,23 @@
 
 .post-type-archive-bt-projects {
     text-align: center;
+    .content {
+        padding: 0 10px;
+    }
+    .project-intro {
+        position: absolute;
+        top: 70%;
+        right: 50%;
+        width: 100%;
+        transform: translate(50%, -50%);
+        font-size: 5vw;
+        color: $gold;
+        padding: 0 10px; 
+        @media (min-width: 370px){
+            font-size: 18.5px;
+            margin-top: 20px;
+        }
+    }
     .project-card {
         position: relative;
         max-width: 450px;

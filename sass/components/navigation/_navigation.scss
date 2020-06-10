@@ -158,11 +158,14 @@
 @media (min-width: 1001px){
 	.main-navigation {
 		all: unset;
-		position: static;
 	}
 	.site-header {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		height: 80px;
+		position: fixed;
+		width: 100%;
+		z-index: 99;
+		box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.377);
 	}
 }

@@ -50,11 +50,23 @@
 }
 .banner-container {
     position: relative;
-    h1 {
+    .banner-text {
+        text-align: center;
         position: absolute;
-        top: 45%;
+        bottom: 30%;
         right: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%);
+        width: 100%;
         color: $gold;
     }
+    h1{
+        margin: 0;
+        font-size: 8vw;
+        width: 100%;
+        margin-bottom: 50px;
+        @media (min-width: 900px){
+            font-size: 72px;
+        }
+    }
+
 }

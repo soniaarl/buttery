@@ -18,7 +18,9 @@ get_header();
 
 		<div class="banner-container">
 			<div class="banner portfolio-banner"></div>
-			<h1><?php the_title();?></h1>
+			<div class="banner-text">
+				<h1><?php the_title();?></h1>
+			</div>
 		</div><!-- end banner-container -->
 
 		<style>
@@ -42,11 +44,25 @@ get_header();
 				</p>
 			</section>
 
+			<!-- Link Buttons -->
+			
+					<?php if(have_rows('links')): ?>
+						<section class="link-btns"> <?php
+						while(have_rows('links')) : the_row();?>
+						
+						<a href="<?php the_sub_field('live_link');?>">View Live</a>
+						<a href="<?php the_sub_field('github_link');?>">View GitHub</a>
+						
+					<?php endwhile;?>
+					</section> <?php
+						endif; ?>
+			
+
 			<!-- Design Process -->
 			<section class="design-process">
 			<h2>Design</h2>
-			<?php if( have_rows('design') ): ?>
-       			<?php while( have_rows('design') ): the_row(); 
+			<?php if( have_rows('design') ):
+       			while( have_rows('design') ): the_row(); 
 
             // Get sub field values.
             $tools = get_sub_field('tools');

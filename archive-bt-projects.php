@@ -17,7 +17,10 @@ get_header();
 <!-- Banner -->
 	<div class="banner-container">
 		<div class="banner portfolio-banner"></div>
-		<h1>Projects</h1>
+		<div class="banner-text">
+			<h1>Projects</h1>
+			<h2 class="project-intro">Explore projects I've worked on and the process behind each one</h2>
+		</div>
 	</div>
 
 	<style>
@@ -28,7 +31,7 @@ get_header();
 
 
 <!-- Intro Content -->
-	<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
+	
 	
 	<div class="content">
 

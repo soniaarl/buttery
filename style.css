@@ -293,7 +293,11 @@ textarea { width: 100%; }
 
 .banner-container { position: relative; }
 
-.banner-container h1 { position: absolute; top: 45%; right: 50%; transform: translate(50%, -50%); color: #F1D895; }
+.banner-container .banner-text { text-align: center; position: absolute; bottom: 30%; right: 50%; transform: translate(50%); width: 100%; color: #F1D895; }
+
+.banner-container h1 { margin: 0; font-size: 8vw; width: 100%; margin-bottom: 50px; }
+
+@media (min-width: 900px) { .banner-container h1 { font-size: 72px; } }
 
 /*--------------------------------------------------------------
 # Components
@@ -340,8 +344,8 @@ textarea { width: 100%; }
 
 .contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: 33px auto; }
 
-@media (min-width: 1001px) { .main-navigation { all: unset; position: static; }
-	.site-header { display: grid; grid-template-columns: 1fr 1fr; height: 80px; } }
+@media (min-width: 1001px) { .main-navigation { all: unset; }
+	.site-header { display: grid; grid-template-columns: 1fr 1fr; height: 80px; position: fixed; width: 100%; z-index: 99; box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.377); } }
 
 /* Posts and pages
 --------------------------------------------- */
@@ -407,6 +411,12 @@ textarea { width: 100%; }
 @media (min-width: 500px) { .page-id-12 main { height: 70vh; } }
 
 .post-type-archive-bt-projects { text-align: center; }
+
+.post-type-archive-bt-projects .content { padding: 0 10px; }
+
+.post-type-archive-bt-projects .project-intro { position: absolute; top: 70%; right: 50%; width: 100%; transform: translate(50%, -50%); font-size: 5vw; color: #F1D895; padding: 0 10px; }
+
+@media (min-width: 370px) { .post-type-archive-bt-projects .project-intro { font-size: 18.5px; margin-top: 20px; } }
 
 .post-type-archive-bt-projects .project-card { position: relative; max-width: 450px; margin: auto; }
 
