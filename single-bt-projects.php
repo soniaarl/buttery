@@ -60,20 +60,22 @@ get_header();
 
 			<!-- Design Process -->
 			<section class="design-process">
-			<h2>Design</h2>
+			
 			<?php if( have_rows('design') ):
        			while( have_rows('design') ): the_row(); 
 
             // Get sub field values.
             $tools = get_sub_field('tools');
             $description = get_sub_field('description');
-            $image = get_sub_field('swatches'); ?>
-
-			<p class="design-tools">//<?php echo $tools?></p>
-			<p class="design-description"><?php echo $description?></p>
-			<!-- Check if image exists before outputting image tag -->
-			<?php if($image):?><img src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
-
+			$image = get_sub_field('swatches'); 
+			
+			if($tools):?> <!-- Check if there's values before outputting -->
+				<h2>Design</h2>
+				<p class="design-tools">//<?php echo $tools?></p>
+				<p class="design-description"><?php echo $description?></p>
+				<!-- Check if image exists before outputting image tag -->
+				<?php if($image):?><img src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
+			<?php endif;?>
 
 			<!-- Mockups -->
 			<?php if( have_rows('mockups') ): ?>
@@ -96,37 +98,38 @@ get_header();
 
 			<!-- Development Process -->
 			<section class="development">
-			<h2>Development</h2>
+			
 			<?php if( have_rows('development') ):
 				  	while( have_rows('development') ): the_row(); 
 
 					// Get sub field values.
 					$tools = get_sub_field('tools');
-					$description = get_sub_field('description'); ?>
-
-					<p>//<?php echo $tools ?></p>
-					<p><?php echo $description ?></p>
-
+					$description = get_sub_field('description'); 
+					
+					if($tools) :?>
+					<h2>Development</h2>
+						<p>//<?php echo $tools ?></p>
+						<p><?php echo $description ?></p>
+					<?php endif;?>
 				<?php endwhile; ?>
 				</section> <!-- end of development -->
 			<?php endif; ?>
 
 			<!-- Takeaways -->
 			<section class="takeaways">
-				<h2>Takeaways</h2>
-				<p> <?php
+				<?php
     				if ( function_exists ( 'get_field' ) ) {
-						if ( get_field( 'takeaways' ) ) {
-						the_field( 'takeaways' );
+						if ( get_field( 'takeaways' ) ) { ?>
+						<h2>Takeaways</h2>
+						<P><?php the_field( 'takeaways' ); ?></p> <?php
         					}
     				}?>
-				</p>
 			</section><!-- end takeaways -->
 
 			<?php the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
 				)
 			);
 
