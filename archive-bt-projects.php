@@ -53,7 +53,7 @@ get_header();
 			while ($query -> have_posts()){
 			$query -> the_post(); ?>
 
-				<div class="project-card fadeup">
+				<div class="project-card">
 					<a href="<?php echo esc_url(get_permalink());?>">
 						<!-- Get Project Title -->
 						<h1><?php the_title(); ?></h1> 

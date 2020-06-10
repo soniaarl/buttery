@@ -414,6 +414,8 @@ textarea { width: 100%; }
 
 .post-type-archive-bt-projects { text-align: center; }
 
+@media (min-width: 1000px) { .post-type-archive-bt-projects .banner { margin-bottom: 40px; } }
+
 .post-type-archive-bt-projects .content { padding: 0 10px; }
 
 .post-type-archive-bt-projects .project-intro { position: absolute; top: 70%; right: 50%; width: 100%; transform: translate(50%, -50%); font-size: 5vw; color: #F1D895; padding: 0 10px; }
@@ -463,7 +465,9 @@ textarea { width: 100%; }
 
 @media (min-width: 799px) { .single-bt-projects .link-btns :first-child { margin-right: 15px; } }
 
-.single-bt-projects .nav-next { margin-top: 100px; }
+.single-bt-projects .nav-next, .single-bt-projects .nav-previous { margin-top: 100px; }
+
+.single-bt-projects .nav-next a, .single-bt-projects .nav-previous a { text-decoration: none; background-color: #0E0E2B; color: #F1D895; border: 1px solid #F1D895; padding: 12px; border-radius: 10px 14px; box-shadow: 1px 1px 3px 1px #ecececa4; }
 
 /* Comments
 --------------------------------------------- */

@@ -2,6 +2,11 @@
 
 .post-type-archive-bt-projects {
     text-align: center;
+    .banner {
+        @media(min-width: 1000px){
+            margin-bottom: 40px;
+        }
+    }
     .content {
         padding: 0 10px;
     }
