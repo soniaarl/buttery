@@ -12,13 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<h2>Let's Connect!</h2>
-		<h2>sonialau5268@gmail.com</h2>
+		<h1>Let's Connect!</h1>
+		<h2>hello@sonialau.ca</h2>
 
 		<div class="social-media-icons">
-			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/linkedin.png'); ?>" alt="LinkedIn">
-			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/instagram.png'); ?>" alt="Instagram">
-			<img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/github.png'); ?>" alt="GitHub">
+			<a href=""><img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/linkedin.png'); ?>" alt="LinkedIn"></a>
+			<a href=""><img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/instagram.png'); ?>" alt="Instagram"></a>
+			<a href=""><img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/github.png'); ?>" alt="GitHub"></a>
 		</div><!-- end social media logos -->
 
 	</footer><!-- #colophon -->

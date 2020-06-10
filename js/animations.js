@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-
+    /* --------------------- SCROLLING ANIMATIONS --------------------- */
     // Check to see if element is in viewport
     (function($) {
 
@@ -59,9 +59,14 @@ jQuery(document).ready(function($) {
             el.addClass("animate__animated animate__fadeInUp"); 
         } 
         });
-    
-    
+
     });
 
-    
+    /* --------------------- CLICKING ANIMATIONS --------------------- */
+    // Animate footer icons when Contact button is clicked
+    $(".contact-icon").click(function(){
+        console.log('this should work');
+        $(".social-media-icons").addClass("animate__animated animate__pulse");
+    });
+
 });
