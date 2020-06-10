@@ -2,9 +2,6 @@
 
 .post-type-archive-bt-projects {
     text-align: center;
-    main {
-        padding: 15px;
-    }
     .project-card {
         position: relative;
         max-width: 450px;
@@ -63,7 +60,7 @@
 
 @media (min-width: 1000px){
     .post-type-archive-bt-projects{
-        main {
+        .content {
             max-width: 1200px;
             margin: auto;
         }

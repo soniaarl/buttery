@@ -38,14 +38,14 @@ jQuery(document).ready(function($) {
 
 
     // Home page
-    $(".designer").each(function(i, el) {
+    $(".leftslide").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
         el.addClass("animate__animated animate__slideInLeft"); 
         } 
     });
 
-    $(".developer").each(function(i, el) {
+    $(".rightslide").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("animate__animated animate__slideInRight"); 
@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
         });
 
     // Portfolio Page
-    $(".project-card").each(function(i, el) {
+    $(".fadeup").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
             el.addClass("animate__animated animate__fadeInUp"); 

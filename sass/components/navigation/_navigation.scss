@@ -129,34 +129,40 @@
 .home-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-bottom: 46px;
-	background-size: 40px auto;
+	padding-bottom: 55px;
+	background-size: 38px auto;
 }
 
 .portfolio-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-bottom: 46px;
-	background-size: 40px auto;
+	padding-bottom: 55px;
+	background-size: 38px auto;
 }
 
 .about-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-bottom: 46px;
-	background-size: auto 40px;
+	padding-bottom: 55px;
+	background-size: auto 38px;
 }
 
 .contact-icon {
 	background-repeat: no-repeat;
 	background-position: center;
-	padding-bottom: 46px;
-	background-size: 35px auto;
+	padding-bottom: 55px;
+	background-size: 33px auto;
 }
 
 // Desktop navigation styles
-@media (min-width: 1000px){
+@media (min-width: 1001px){
 	.main-navigation {
+		all: unset;
 		position: static;
+	}
+	.site-header {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: 80px;
 	}
 }

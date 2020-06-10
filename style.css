@@ -236,13 +236,17 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .site-header img { width: 10%; max-width: 60px; }
 
-.site-header .site-title { padding: 10px 20px; text-align: left; }
+.site-header .site-title { padding: 10px 20px; text-align: left; max-height: 80px; }
+
+@media (min-width: 1001px) { .site-header .site-title img { width: 60px; } }
 
 .site-footer { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 20px 0; margin-bottom: 100px; }
 
 .site-footer h2 { margin: 5px; font-size: 18px; }
 
 .site-footer img { width: 50px; margin: 5px 20px 5px 20px; }
+
+@media (min-width: 1001px) { .site-footer { margin-bottom: 0; } }
 
 /* Links
 --------------------------------------------- */
@@ -285,6 +289,12 @@ textarea { width: 100%; }
 
 .banner .banner-text { position: absolute; bottom: 10%; right: 50%; transform: translate(50%); width: 100%; }
 
+.portfolio-banner { filter: brightness(50%); -webkit-filter: brightness(50%); -moz-filter: brightness(50%); }
+
+.banner-container { position: relative; }
+
+.banner-container h1 { position: absolute; top: 45%; right: 50%; transform: translate(50%, -50%); color: #F1D895; }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -322,15 +332,16 @@ textarea { width: 100%; }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next { text-align: end; flex: 1 0 50%; }
 
-.home-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
+.home-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: 38px auto; }
 
-.portfolio-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 40px auto; }
+.portfolio-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: 38px auto; }
 
-.about-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: auto 40px; }
+.about-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: auto 38px; }
 
-.contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 46px; background-size: 35px auto; }
+.contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: 33px auto; }
 
-@media (min-width: 1000px) { .main-navigation { position: static; } }
+@media (min-width: 1001px) { .main-navigation { all: unset; position: static; }
+	.site-header { display: grid; grid-template-columns: 1fr 1fr; height: 80px; } }
 
 /* Posts and pages
 --------------------------------------------- */
@@ -397,8 +408,6 @@ textarea { width: 100%; }
 
 .post-type-archive-bt-projects { text-align: center; }
 
-.post-type-archive-bt-projects main { padding: 15px; }
-
 .post-type-archive-bt-projects .project-card { position: relative; max-width: 450px; margin: auto; }
 
 .post-type-archive-bt-projects .project-card a { text-decoration: none; color: black; }
@@ -415,7 +424,7 @@ textarea { width: 100%; }
 
 .post-type-archive-bt-projects .project-card .project-btn { position: absolute; bottom: 20%; right: 50%; transform: translate(50%); color: #F1D895; background-color: #0E0E2B; display: block; width: 80%; padding: 8px; border: 2px solid #F1D895; border-radius: 10px; }
 
-@media (min-width: 1000px) { .post-type-archive-bt-projects main { max-width: 1200px; margin: auto; }
+@media (min-width: 1000px) { .post-type-archive-bt-projects .content { max-width: 1200px; margin: auto; }
 	.post-type-archive-bt-projects .content { display: flex; }
 	.post-type-archive-bt-projects .project-card { width: 300px; }
 	.post-type-archive-bt-projects .project-card h1 { font-size: 28px; top: 13%; transform: translate(50%); padding-bottom: 5px; }

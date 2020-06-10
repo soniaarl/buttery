@@ -40,7 +40,7 @@ get_template_part( 'template-parts/banner'); //include banner
 
 			<div class="skills-cards">
 			<!-- Designer -->
-			<section id="designer" class="designer">
+			<section class="designer leftslide">
 			<?php if( have_rows('designer') ):
 					while( have_rows('designer') ): the_row(); 
 
@@ -67,7 +67,7 @@ get_template_part( 'template-parts/banner'); //include banner
 			<?php endif; ?>
 
 			<!-- Developer -->
-			<section class="developer">
+			<section class="developer rightslide">
 			<?php if( have_rows('developer') ):
 					while( have_rows('developer') ): the_row(); 
 

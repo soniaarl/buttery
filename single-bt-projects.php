@@ -14,9 +14,21 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
+			the_post();?>
 
-			get_template_part( 'template-parts/content', get_post_type() );?>
+		<div class="banner-container">
+			<div class="banner portfolio-banner"></div>
+			<h1><?php the_title();?></h1>
+		</div><!-- end banner-container -->
+
+		<style>
+			.banner{
+				<?php if(get_queried_object_id() != 0)
+				{?> background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>'); 
+				<?php }?>
+			}
+		</style>
+
 
 			<!-- Project Brief -->
 		    <section class="project-brief">

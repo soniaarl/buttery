@@ -8,6 +8,7 @@
     height: 50vw;
     max-height: 600px;
     /* Create the parallax scrolling effect */
+    // Background image is set dynamically in banner.php
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,5 +38,23 @@
         right: 50%;
         transform: translate(50%);
         width: 100%;
+    }
+}
+
+
+// Portfolio Banner Styles
+.portfolio-banner {
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        -moz-filter: brightness(50%);
+}
+.banner-container {
+    position: relative;
+    h1 {
+        position: absolute;
+        top: 45%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        color: $gold;
     }
 }

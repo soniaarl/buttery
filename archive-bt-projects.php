@@ -8,11 +8,26 @@
  */
 
 get_header();
-get_template_part( 'template-parts/banner'); //include banner
 ?>
 
+
+<!-- Main Content -->
 	<main id="primary" class="site-main">
-	
+
+<!-- Banner -->
+	<div class="banner-container">
+		<div class="banner portfolio-banner"></div>
+		<h1>Projects</h1>
+	</div>
+
+	<style>
+		.banner{
+		<?php if(get_queried_object_id() == 0){?> background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/skal/d-skal-banner.jpg')); ?>'); <?php }?>
+		}
+	</style>
+
+
+<!-- Intro Content -->
 	<p class="project-intro">Explore projects I've worked on and the process behind each one</p>
 	
 	<div class="content">
@@ -35,7 +50,7 @@ get_template_part( 'template-parts/banner'); //include banner
 			while ($query -> have_posts()){
 			$query -> the_post(); ?>
 
-				<div class="project-card">
+				<div class="project-card fadeup">
 					<a href="<?php echo esc_url(get_permalink());?>">
 						<!-- Get Project Title -->
 						<h1><?php the_title(); ?></h1> 
