@@ -441,6 +441,28 @@ textarea { width: 100%; }
 	.post-type-archive-bt-projects .project-card .project-btn { bottom: 35%; }
 	.post-type-archive-bt-projects .project-card .logos img { height: 30px; } }
 
+.single-bt-projects .content { padding: 0 30px; max-width: 800px; margin: auto; }
+
+.single-bt-projects .content h2 { text-align: center; border-top: 3px solid #F1D895; border-bottom: 3px solid #F1D895; padding: 10px 0; width: 100%; margin: 60px 0 30px 0; }
+
+.single-bt-projects .content h3 { margin: 15px 0 10px 0; }
+
+.single-bt-projects .content p { margin: 10px 0; }
+
+.single-bt-projects .content img { width: 100%; margin-top: 20px; }
+
+.single-bt-projects .project-brief h2 { margin-top: 0; }
+
+.single-bt-projects .link-btns { display: flex; text-align: center; justify-content: center; max-width: 800px; margin: auto; margin-bottom: 10px; margin-top: 30px; }
+
+.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 80%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; }
+
+.single-bt-projects .link-btns :first-child { margin-right: 10px; }
+
+@media (min-width: 799px) { .single-bt-projects .link-btns :first-child { margin-right: 15px; } }
+
+.single-bt-projects .nav-next { margin-top: 100px; }
+
 /* Comments
 --------------------------------------------- */
 .comment-content a { word-wrap: break-word; }

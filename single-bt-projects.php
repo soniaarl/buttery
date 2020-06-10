@@ -31,10 +31,12 @@ get_header();
 			}
 		</style>
 
+	<div class="content">
 
 			<!-- Project Brief -->
 		    <section class="project-brief">
 				<h2>Project Brief</h2>
+				<?php the_content(); ?>
 				<p> <?php
     				if ( function_exists ( 'get_field' ) ) {
 						if ( get_field( 'project_brief' ) ) {
@@ -42,11 +44,9 @@ get_header();
         					}
     				}?>
 				</p>
-			</section>
-
-			<!-- Link Buttons -->
+				<!-- Link Buttons -->
 			
-					<?php if(have_rows('links')): ?>
+				<?php if(have_rows('links')): ?>
 						<section class="link-btns"> <?php
 						while(have_rows('links')) : the_row();?>
 						
@@ -56,8 +56,8 @@ get_header();
 					<?php endwhile;?>
 					</section> <?php
 						endif; ?>
+			</section>
 			
-
 			<!-- Design Process -->
 			<section class="design-process">
 			
@@ -74,7 +74,7 @@ get_header();
 				<p class="design-tools">//<?php echo $tools?></p>
 				<p class="design-description"><?php echo $description?></p>
 				<!-- Check if image exists before outputting image tag -->
-				<?php if($image):?><img src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
+				<?php if($image):?><img class="rightslide" src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
 			<?php endif;?>
 
 			<!-- Mockups -->
@@ -86,7 +86,7 @@ get_header();
 
 				<p><?php echo $description?></p>
 				<!-- Check if image exists before outputting image tag -->
-				<?php if($image):?><img src="<?php echo $image?>" alt="Mockups"><?php endif; ?>
+				<?php if($image):?><img class="leftslide" src="<?php echo $image?>" alt="Mockups"><?php endif; ?>
 			
         		<?php endwhile; ?>
 				</section>
@@ -128,8 +128,8 @@ get_header();
 
 			<?php the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle prev-btn">' . esc_html__( 'Previous Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle next-btn">' . esc_html__( 'Next Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
 				)
 			);
 
@@ -140,7 +140,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
+	</div> <!-- end content -->
 	</main><!-- #main -->
 
 <?php
