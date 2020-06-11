@@ -8,13 +8,9 @@
             color: $gold;
             display: block;
         }
-        a:hover {
+        a:hover, a:active, a:focus {
             color: white;
         }
-        a.active {
-            background-color: #4CAF50;
-            color: white;
-}
     }
     img{
         width: 10%;

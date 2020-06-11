@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
         function(){
         setTimeout(function() { //delay by 1s
             $(".pulse").addClass("animate__animated animate__pulse");
-        }, 1000);
+        }, 800);
     });
 
     // Reset animation by removing class on animation end
