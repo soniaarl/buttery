@@ -10,9 +10,9 @@
     /* Create the parallax scrolling effect */
     // Background image is set dynamically in banner.php
     background-attachment: fixed;
-    background-position: center;
+    background-position: top left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     img{
         position: absolute;
         bottom: 30%;
