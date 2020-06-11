@@ -12,3 +12,16 @@ textarea {
 
 @import "headings";
 @import "copy";
+
+@font-face {
+	font-family: 'OratorStd';
+	src: url('fonts/OratorStd.otf')
+}
+
+$heading_font: 'OratorStd';
+
+h1, h2, h3, h4, a {
+	font-family: $heading_font;
+	text-transform: lowercase;
+	font-weight: normal;
+}

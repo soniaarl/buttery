@@ -197,6 +197,10 @@ mark, ins { background: #fff9c0; text-decoration: none; }
 
 big { font-size: 125%; }
 
+@font-face { font-family: 'OratorStd'; src: url("fonts/OratorStd.otf"); }
+
+h1, h2, h3, h4, a { font-family: "OratorStd"; text-transform: lowercase; font-weight: normal; }
+
 /* Elements
 --------------------------------------------- */
 body { background: #fff; }
@@ -242,11 +246,19 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .site-footer { background-color: #0E0E2B; color: #F1D895; text-align: center; padding: 30px 0; margin-bottom: 100px; }
 
-.site-footer h1 { margin: 0 0 15px 0; }
+.site-footer h1 { margin: 0; font-size: 4vw; }
 
-.site-footer h2 { margin: 5px; font-size: 18px; }
+@media (min-width: 900px) { .site-footer h1 { font-size: 36px; } }
 
-.site-footer img { width: 50px; margin: 25px 20px 10px 20px; }
+.site-footer a { margin: 5px; font-size: 4vw; text-decoration: none; color: #F1D895; line-height: 1.5; }
+
+@media (min-width: 600px) { .site-footer a { font-size: 24px; } }
+
+.site-footer a:hover { color: white; }
+
+.site-footer img { width: 10vw; margin: 15px 2% 0 2%; max-width: 50px; }
+
+.site-footer .social-media-icons { max-width: 610px; margin: auto; }
 
 @media (min-width: 1001px) { .site-footer { margin-bottom: 0; } }
 
@@ -283,13 +295,13 @@ textarea { width: 100%; }
 --------------------------------------------------------------*/
 .banner { background-color: #0E0E2B; position: relative; color: #F1D895; text-align: center; padding: 0 0 30px 0; margin-bottom: 20px; height: 50vw; max-height: 600px; /* Create the parallax scrolling effect */ background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
-.banner img { position: absolute; bottom: 30%; transform: translate(-50%); width: 20%; max-width: 150px; border: 3px solid #F1D895; padding: 7px; border-radius: 20px; margin-bottom: 15px; }
+.banner img { position: absolute; bottom: 30%; transform: translate(-50%); width: 20%; max-width: 150px; border: 3px solid #F1D895; padding: 7px; border-radius: 20px; margin-bottom: 25px; }
 
 .banner h1 { margin: 0; font-size: 4vw; width: 100%; }
 
 @media (min-width: 900px) { .banner h1 { font-size: 36px; } }
 
-.banner .banner-text { position: absolute; bottom: 10%; right: 50%; transform: translate(50%); width: 100%; }
+.banner .banner-text { position: absolute; bottom: 10%; right: 50%; transform: translate(50%); width: 100%; text-transform: lowercase; }
 
 .portfolio-banner { filter: brightness(50%); -webkit-filter: brightness(50%); -moz-filter: brightness(50%); }
 
@@ -322,7 +334,7 @@ textarea { width: 100%; }
 
 .main-navigation li { position: relative; width: 100%; }
 
-.main-navigation a { display: block; text-decoration: none; width: 100%; height: 100%; text-align: center; padding-top: 30px; position: absolute; bottom: -40%; }
+.main-navigation a { display: block; text-decoration: none; width: 100%; height: 100%; text-align: center; padding-top: 30px; position: absolute; bottom: -40%; font-size: 14px; }
 
 /* Small menu. */
 .menu-toggle, .main-navigation.toggled ul { display: block; }
@@ -347,6 +359,7 @@ textarea { width: 100%; }
 .contact-icon { background-repeat: no-repeat; background-position: center; padding-bottom: 55px; background-size: 33px auto; }
 
 @media (min-width: 1001px) { .main-navigation { all: unset; }
+	.main-navigation a { font-size: 16px; }
 	.site-header { display: grid; grid-template-columns: 1fr 1fr; height: 80px; position: fixed; width: 100%; z-index: 99; box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.377); } }
 
 /* Posts and pages
@@ -426,7 +439,7 @@ textarea { width: 100%; }
 
 .post-type-archive-bt-projects .project-card a { text-decoration: none; color: black; }
 
-.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 10%; right: 50%; font-size: 8vw; text-transform: uppercase; transform: translate(50%, 50%); display: block; width: 100%; z-index: 2; color: white; border-bottom: 2px solid #F1D895; }
+.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 10%; right: 50%; font-size: 8vw; transform: translate(50%, 50%); display: block; width: 100%; z-index: 2; color: white; border-bottom: 2px solid #F1D895; }
 
 @media (min-width: 600px) { .post-type-archive-bt-projects .project-card h1 { font-size: 46px; } }
 
@@ -465,9 +478,9 @@ textarea { width: 100%; }
 
 @media (min-width: 799px) { .single-bt-projects .link-btns :first-child { margin-right: 15px; } }
 
-.single-bt-projects .nav-next, .single-bt-projects .nav-previous { margin-top: 100px; }
+.single-bt-projects .nav-next, .single-bt-projects .nav-previous { margin-top: 100px; margin-bottom: 20px; }
 
-.single-bt-projects .nav-next a, .single-bt-projects .nav-previous a { text-decoration: none; background-color: #0E0E2B; color: #F1D895; border: 1px solid #F1D895; padding: 12px; border-radius: 10px 14px; box-shadow: 1px 1px 3px 1px #ecececa4; }
+.single-bt-projects .nav-next a, .single-bt-projects .nav-previous a { text-decoration: none; background-color: #0E0E2B; color: #F1D895; border: 1px solid #F1D895; padding: 12px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; }
 
 /* Comments
 --------------------------------------------- */

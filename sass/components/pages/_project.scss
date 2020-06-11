@@ -56,13 +56,14 @@
     }
     .nav-next, .nav-previous {
         margin-top: 100px;
+        margin-bottom: 20px;
         a {
             text-decoration: none;
             background-color: $darkblue;
             color: $gold;
             border: 1px solid $gold;
             padding: 12px;
-            border-radius: 10px 14px;
+            border-radius: 10px;
             box-shadow: $shadow;
         }
     }

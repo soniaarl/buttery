@@ -62,11 +62,24 @@ jQuery(document).ready(function($) {
 
     });
 
+     /* --------------------- Set a delay before class is removed --------------------- */
+    // $(".leftslide").on('animationend', () => {
+    //     setTimeout(function() {
+    //             $(".leftslide").removeClass("animate__animated animate__slideInLeft");
+            
+    //     }, 6000);
+    // });
+
     /* --------------------- CLICKING ANIMATIONS --------------------- */
     // Animate footer icons when Contact button is clicked
     $(".contact-icon").click(function(){
         console.log('this should work');
         $(".social-media-icons").addClass("animate__animated animate__pulse");
     });
+
+    // Reset animation by removing class on animation end
+    $(".social-media-icons").on('animationend', () => {
+        $(".social-media-icons").removeClass("animate__animated animate__pulse");
+      });
 
 });

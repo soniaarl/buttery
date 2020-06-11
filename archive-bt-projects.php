@@ -18,7 +18,7 @@ get_header();
 	<div class="banner-container">
 		<div class="banner portfolio-banner"></div>
 		<div class="banner-text">
-			<h1>Projects</h1>
+			<h1>Portfolio</h1>
 			<h2 class="project-intro">Explore projects I've worked on and the process behind each one</h2>
 		</div>
 	</div>

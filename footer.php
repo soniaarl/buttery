@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<h1>Let's Connect!</h1>
-		<h2>hello@sonialau.ca</h2>
+		<a href="mailto:hello@sonialau.ca">hello@sonialau.ca</a>
 
 		<div class="social-media-icons">
 			<a href=""><img src="<?php echo esc_url(get_home_url().'/wp-content/uploads/icons/footer/linkedin.png'); ?>" alt="LinkedIn"></a>
