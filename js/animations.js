@@ -72,14 +72,16 @@ jQuery(document).ready(function($) {
 
     /* --------------------- CLICKING ANIMATIONS --------------------- */
     // Animate footer icons when Contact button is clicked
-    $(".contact-icon").click(function(){
-        console.log('this should work');
-        $(".social-media-icons").addClass("animate__animated animate__pulse");
+    $(".contact-icon").click(
+        function(){
+        setTimeout(function() { //delay by 1s
+            $(".pulse").addClass("animate__animated animate__pulse");
+        }, 1000);
     });
 
     // Reset animation by removing class on animation end
-    $(".social-media-icons").on('animationend', () => {
-        $(".social-media-icons").removeClass("animate__animated animate__pulse");
+    $(".pulse").on('animationend', () => {
+        $(".pulse").removeClass("animate__animated animate__pulse");
       });
 
 });

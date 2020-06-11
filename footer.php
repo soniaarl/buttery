@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<h1>Let's Connect!</h1>
+		<h1 class="pulse">Let's Connect!</h1>
 		<a href="mailto:hello@sonialau.ca">hello@sonialau.ca</a>
 
 		<div class="social-media-icons">

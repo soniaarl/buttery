@@ -31,7 +31,7 @@ get_template_part( 'template-parts/banner'); //include banner
 					}
 				}?>
 
-				<div class="cta-text">
+				<div class="cta-text raise">
 					<?php get_template_part( 'template-parts/content', 'notitle' ); //remove title?>
 					<div class="portfolio-btn"><a href="<?php echo esc_url(get_home_url().'/projects'); ?>">View Portfolio</a></div>
 				</div><!-- end cta-text -->
