@@ -16,6 +16,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();?>
 
+		<!-- Banner -->
 		<div class="banner-container">
 			<div class="banner portfolio-banner"></div>
 			<div class="banner-text">
@@ -30,6 +31,9 @@ get_header();
 				<?php }?>
 			}
 		</style>
+
+	<!-- About Overlay -->
+	<?php get_template_part( 'template-parts/about'); //include about overlay ?>
 
 	<div class="content">
 

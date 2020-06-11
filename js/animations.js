@@ -62,14 +62,6 @@ jQuery(document).ready(function($) {
 
     });
 
-     /* --------------------- Set a delay before class is removed --------------------- */
-    // $(".leftslide").on('animationend', () => {
-    //     setTimeout(function() {
-    //             $(".leftslide").removeClass("animate__animated animate__slideInLeft");
-            
-    //     }, 6000);
-    // });
-
     /* --------------------- CLICKING ANIMATIONS --------------------- */
     // Animate footer icons when Contact button is clicked
     $(".contact-icon").click(

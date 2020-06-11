@@ -8,7 +8,8 @@
 
 		if($about_page -> have_posts() ){
 			while($about_page -> have_posts()){
-				$about_page -> the_post();
+                $about_page -> the_post();
+                the_title( '<h1>', '</h1>' );
 				the_content();
 			}
 			wp_reset_postdata();
