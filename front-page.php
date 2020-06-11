@@ -13,11 +13,13 @@
  */
 
 get_header();
-get_template_part( 'template-parts/banner'); //include banner
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main"> 
+	<?php get_template_part( 'template-parts/banner'); //include banner 
+	get_template_part( 'template-parts/about'); //include about overlay ?>
 
+	<div class="content">
 		<?php
 		while ( have_posts() ) :
 			the_post(); ?>
@@ -103,7 +105,7 @@ get_template_part( 'template-parts/banner'); //include banner
 
 		endwhile; // End of the loop.
 		?>
-
+	</div> <!-- end content -->
 	</main><!-- #main -->
 
 <?php

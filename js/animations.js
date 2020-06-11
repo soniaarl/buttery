@@ -84,4 +84,13 @@ jQuery(document).ready(function($) {
         $(".pulse").removeClass("animate__animated animate__pulse");
       });
 
+    // Toggle "About" Overlay when button or overlay is clicked
+    $(".about-icon").click(function(){ //click button to open/close
+        $(".about-overlay").toggleClass("show");
+    });
+
+    $(".about-overlay").click(function(){ //click overlay to close
+        $(".about-overlay").removeClass("show");
+    });
+
 });

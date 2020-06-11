@@ -317,6 +317,12 @@ textarea { width: 100%; }
 
 @media (min-width: 900px) { .banner-container h1 { font-size: 72px; } }
 
+.about-overlay { height: 0; width: 100%; position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; bottom: 0; background-color: black; /* Black fallback color */ background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */ overflow-x: hidden; /* Disable horizontal scroll */ transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ z-index: 50; }
+
+.show { height: 100%; padding-bottom: 100px; }
+
+@media (min-width: 1001px) { .about-overlay { margin-top: 80px; left: 0; top: 0; } }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -400,7 +406,7 @@ textarea { width: 100%; }
 	.profile-cta .cta-text .portfolio-btn { position: absolute; width: 100%; bottom: 7%; }
 	.profile-cta .post-8 { margin: 0; } }
 
-.page-id-8 main { padding: 0 10px 25px 10px; }
+.page-id-8 .content { padding: 0 10px 25px 10px; }
 
 .page-id-8 .designer, .page-id-8 .developer { box-shadow: 1px 1px 3px 1px #ecececa4; border: 0.5px solid #eeeeee8a; border-radius: 10px; text-align: center; padding: 20px 10px; max-width: 500px; }
 

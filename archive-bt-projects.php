@@ -29,6 +29,8 @@ get_header();
 		}
 	</style>
 
+<!-- About Overlay -->
+	<?php get_template_part( 'template-parts/about'); //include about overlay ?>
 
 <!-- Intro Content -->
 	
