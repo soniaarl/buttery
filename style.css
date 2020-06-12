@@ -496,6 +496,8 @@ textarea { width: 100%; }
 	.post-type-archive-bt-projects .project-card .logos img { height: 30px; }
 	.project-card h1 { font-size: 28px; top: 13%; transform: translate(50%); padding-bottom: 5px; } }
 
+.single-bt-projects .banner-container h1 { margin-bottom: 20px; }
+
 .single-bt-projects .content { padding: 0 30px; max-width: 800px; margin: auto; }
 
 .single-bt-projects .content h2 { text-align: center; border-top: 3px solid #F1D895; border-bottom: 3px solid #F1D895; padding: 10px 0; width: 100%; margin: 60px 0 30px 0; }
@@ -510,19 +512,17 @@ textarea { width: 100%; }
 
 .single-bt-projects .link-btns { display: flex; text-align: center; justify-content: center; max-width: 800px; margin: auto; margin-bottom: 10px; margin-top: 30px; }
 
-.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 80%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; max-width: 300px; }
+.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 100%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; font-size: 4vw; }
+
+@media (min-width: 400px) { .single-bt-projects .link-btns a { font-size: 16px; } }
 
 .single-bt-projects .link-btns :first-child { margin-right: 10px; }
 
 @media (min-width: 799px) { .single-bt-projects .link-btns :first-child { margin-right: 15px; } }
 
-.single-bt-projects .nav-next, .single-bt-projects .nav-previous { margin-top: 100px; margin-bottom: 20px; }
+.other-projects { max-width: 1000px; margin: auto; margin-top: 30px; }
 
-.single-bt-projects .nav-next a, .single-bt-projects .nav-previous a { text-decoration: none; background-color: #0E0E2B; color: #F1D895; border: 1px solid #F1D895; padding: 12px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; }
-
-.other-projects { max-width: 1000px; margin: auto; margin-top: 20px; }
-
-.other-projects .project-card { width: 450px; margin-bottom: 15px; }
+.other-projects .project-card { width: 450px; margin-bottom: 40px; }
 
 .other-projects .project-btn { bottom: 10%; }
 

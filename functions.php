@@ -205,12 +205,4 @@ function my_allowed_block_types( $allowed_block_types, $post ) {
 }
 add_filter( 'allowed_block_types', 'my_allowed_block_types', 10, 2);
 
-// function allow_new_mime_type($mimes) {
-
-//     $mimes['svg'] = 'image/svg+xml';
-
-//     return $mimes;
-// }
-// add_filter( 'mime_types', 'allow_new_mime_type' );
-
 ?>

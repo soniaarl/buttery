@@ -136,12 +136,12 @@ get_header();
 
 			<?php 
 			// Gets current post id to exclude in bottom links
-			$exclude = get_the_ID();
 			$args = array(
 				'post_type' => 'bt-projects',
 				'posts_per_page' => 3,
-				'orderby' => 'title',
-			'order' => 'ASC'
+				'orderby' => 'rand',
+				'post__not_in' => array(get_the_ID()) // Exclude current post id
+				
 			); ?>
 
 			<section class="other-projects"> 
@@ -149,9 +149,8 @@ get_header();
 					if ($query -> have_posts()){
 						while ($query -> have_posts()){
 							$query -> the_post(); 
-							// Exclude current post id
-							if($exclude != get_the_ID()){?>
-				
+							
+							?>
 								<div class="project-card">
 									<a href="<?php the_permalink(); ?>">
 										<h1><?php the_title(); ?></h1>
@@ -164,20 +163,11 @@ get_header();
 										}?>
 									</a>
 								</div> <!-- end project-card --> <?php
-							}
 						}
 						wp_reset_postdata();
 					}
 				?>
 			</section> <!-- end other-projects -->
-
-
-				<!-- <?php the_post_navigation(
-					array(
-						'prev_text' => '<span class="nav-subtitle prev-btn">' . esc_html__( 'Previous Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
-						'next_text' => '<span class="nav-subtitle next-btn">' . esc_html__( 'Next Project:', 'buttery' ) . '</span> <span class="nav-title">%title</span>',
-					)
-				); ?> -->
 			
 			
 			<?php
