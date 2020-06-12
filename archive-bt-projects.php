@@ -39,11 +39,7 @@ get_header();
 
 		<?php $args = array(
 		'post_type' => 'bt-projects',
-		'posts_per_page' => -1,
-		// Set to ascending order:
-		'order' => 'ASC',
-		// Order by title:
-		'orderby' => 'title'
+		'posts_per_page' => -1
 		); ?>
 
 

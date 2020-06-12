@@ -50,6 +50,9 @@
         max-width: 50px;
         height: auto;
         fill: white;
+        @media(min-width: 1001px){
+            margin: 35px 3% 0 3%;
+        }
     }
     .social-media-icons {
         max-width: 610px;

@@ -262,6 +262,8 @@ table { margin: 0 0 1.5em; width: 100%; }
 
 .site-footer svg { width: 10vw; margin: 35px 2% 0 2%; max-width: 50px; height: auto; fill: white; }
 
+@media (min-width: 1001px) { .site-footer svg { margin: 35px 3% 0 3%; } }
+
 .site-footer .social-media-icons { max-width: 610px; margin: auto; }
 
 .site-footer .social-media-icons svg { transition: 0.2s ease-in; }
@@ -468,28 +470,31 @@ textarea { width: 100%; }
 
 @media (min-width: 370px) { .post-type-archive-bt-projects .project-intro { font-size: 18.5px; margin-top: 20px; } }
 
-.post-type-archive-bt-projects .project-card { text-align: center; position: relative; max-width: 450px; margin: auto; }
+.project-card { text-align: center; position: relative; max-width: 450px; margin: auto; transition: 0.2s ease-in; }
 
-.post-type-archive-bt-projects .project-card a { text-decoration: none; color: black; }
+.project-card a { text-decoration: none; color: black; }
 
-.post-type-archive-bt-projects .project-card h1 { position: absolute; top: 10%; right: 50%; font-size: 8vw; transform: translate(50%, 50%); display: block; width: 100%; z-index: 2; color: white; border-bottom: 2px solid #F1D895; }
+.project-card h1 { position: absolute; top: 10%; right: 50%; font-size: 8vw; transform: translate(50%, 50%); display: block; width: 100%; z-index: 2; color: white; border-bottom: 2px solid #F1D895; }
 
-@media (min-width: 600px) { .post-type-archive-bt-projects .project-card h1 { font-size: 46px; } }
+@media (min-width: 600px) { .project-card h1 { font-size: 46px; } }
 
-.post-type-archive-bt-projects .project-card .logos { margin: 10px 0 60px 0; }
+.project-card .logos { margin: 10px 0 60px 0; }
 
-.post-type-archive-bt-projects .project-card .logos img { height: 8vw; width: auto; margin: 0 5px; max-height: 40px; }
+.project-card .logos img { height: 8vw; width: auto; margin: 0 5px; max-height: 40px; }
 
-.post-type-archive-bt-projects .project-card .project-poster { border-radius: 25px; filter: brightness(35%); -webkit-filter: brightness(35%); -moz-filter: brightness(35%); box-shadow: 1px 1px 3px 1px #ecececa4; }
+.project-card .project-poster { border-radius: 25px; filter: brightness(35%); -webkit-filter: brightness(35%); -moz-filter: brightness(35%); box-shadow: 1px 1px 3px 1px #ecececa4; }
 
-.post-type-archive-bt-projects .project-card .project-btn { position: absolute; bottom: 20%; right: 50%; transform: translate(50%); color: #F1D895; background-color: #0E0E2B; display: block; width: 80%; padding: 8px; border: 2px solid #F1D895; border-radius: 10px; }
+.project-card .project-btn { position: absolute; bottom: 20%; right: 50%; transform: translate(50%); color: #F1D895; background-color: #0E0E2B; display: block; width: 80%; padding: 8px; border: 2px solid #F1D895; border-radius: 10px; }
+
+.project-card:hover { transform: translateY(-0.25em); transition: 0.6s ease; }
 
 @media (min-width: 1000px) { .post-type-archive-bt-projects .content { max-width: 1200px; margin: auto; }
 	.post-type-archive-bt-projects .content { display: flex; flex-wrap: wrap; }
 	.post-type-archive-bt-projects .project-card { width: 300px; }
 	.post-type-archive-bt-projects .project-card h1 { font-size: 28px; top: 13%; transform: translate(50%); padding-bottom: 5px; }
 	.post-type-archive-bt-projects .project-card .project-btn { bottom: 35%; }
-	.post-type-archive-bt-projects .project-card .logos img { height: 30px; } }
+	.post-type-archive-bt-projects .project-card .logos img { height: 30px; }
+	.project-card h1 { font-size: 28px; top: 13%; transform: translate(50%); padding-bottom: 5px; } }
 
 .single-bt-projects .content { padding: 0 30px; max-width: 800px; margin: auto; }
 
@@ -505,7 +510,7 @@ textarea { width: 100%; }
 
 .single-bt-projects .link-btns { display: flex; text-align: center; justify-content: center; max-width: 800px; margin: auto; margin-bottom: 10px; margin-top: 30px; }
 
-.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 80%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; }
+.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 80%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; max-width: 300px; }
 
 .single-bt-projects .link-btns :first-child { margin-right: 10px; }
 
@@ -514,6 +519,15 @@ textarea { width: 100%; }
 .single-bt-projects .nav-next, .single-bt-projects .nav-previous { margin-top: 100px; margin-bottom: 20px; }
 
 .single-bt-projects .nav-next a, .single-bt-projects .nav-previous a { text-decoration: none; background-color: #0E0E2B; color: #F1D895; border: 1px solid #F1D895; padding: 12px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; }
+
+.other-projects { max-width: 1000px; margin: auto; margin-top: 20px; }
+
+.other-projects .project-card { width: 450px; margin-bottom: 15px; }
+
+.other-projects .project-btn { bottom: 10%; }
+
+@media (min-width: 1000px) { .other-projects { display: flex; }
+	.other-projects .project-card { width: 300px; } }
 
 /* Comments
 --------------------------------------------- */
