@@ -4,7 +4,6 @@
 .post-8 img {
     width: 60%;
 }
-
 .desktop-devices {
     display: none;
 }
@@ -23,15 +22,10 @@
     }
     a {
         text-decoration: none;
-        // background-color: $darkblue;
         display: block;
         width: 95%;
-        // margin: auto;
+        padding: 10px;
         color: $gold;
-        // padding: 10px;
-        // border: 1px solid $gold;
-        // border-radius: 7px;
-        // box-shadow: $shadow;
     }
 }
 

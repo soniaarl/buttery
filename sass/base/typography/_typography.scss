@@ -15,7 +15,10 @@ textarea {
 
 @font-face {
 	font-family: 'OratorStd';
-	src: url('fonts/OratorStd.otf')
+	src: url('fonts/OratorStd.otf');
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
 }
 
 $heading_font: 'OratorStd';

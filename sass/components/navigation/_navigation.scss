@@ -80,6 +80,14 @@
 		bottom: -40%;
 		font-size: 14px;
 	}
+	a:focus {
+		outline: none;
+		border-bottom: 2px solid $gold;
+		@media(min-width: 1001px){
+			border-top: 2px solid $gold;
+			border-bottom: none;
+		}
+	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -160,9 +168,12 @@
 @media (min-width: 1001px){
 	.main-navigation {
 		all: unset;
-
+		ul {
+			padding: 5px 0 0 0;
+		}
 		a {
 			font-size: 16px;
+			padding-top: 5px;
 		}
 	}
 	.site-header {

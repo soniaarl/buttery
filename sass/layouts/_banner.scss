@@ -7,12 +7,10 @@
     margin-bottom: 20px;
     height: 50vw;
     max-height: 600px;
-    /* Create the parallax scrolling effect */
-    // Background image is set dynamically in banner.php
     background-attachment: fixed;
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120%;
     img{
         position: absolute;
         bottom: 30%;
@@ -22,19 +20,22 @@
         border: 3px solid $gold;
         padding: 7px;
         border-radius: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 6vw;
+        @media(min-width: 900px){
+            margin-bottom: 54px;
+        }
     }
     h1{
         margin: 0;
-        font-size: 4vw;
+        font-size: 5vw;
         width: 100%;
-        @media (min-width: 900px){
+        @media (min-width: 720px){
             font-size: 36px;
         }
     }
     .banner-text {
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         right: 50%;
         transform: translate(50%);
         -moz-transform: translate(50%);
@@ -44,6 +45,25 @@
     }
 }
 
+// Home Banner 
+.page-id-8 .banner {
+    // By: Manuel Pinto - https://manuelpinto.in
+    background: linear-gradient(-45deg, #a352ee, $darkblue, #0e4c63, #6d2269);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 // Portfolio Banner Styles
 .portfolio-banner {

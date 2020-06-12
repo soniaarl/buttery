@@ -54,8 +54,8 @@ get_header();
 						<section class="link-btns"> <?php
 						while(have_rows('links')) : the_row();?>
 						
-						<a href="<?php the_sub_field('live_link');?>">View Live</a>
-						<a href="<?php the_sub_field('github_link');?>">View GitHub</a>
+						<?php if(get_sub_field('live_link')):?><a href="<?php the_sub_field('live_link');?>">View Live</a> <?php endif; ?>
+						<?php if(get_sub_field('github_link')):?><a href="<?php the_sub_field('github_link');?>">View GitHub</a> <?php endif; ?>
 						
 					<?php endwhile;?>
 					</section> <?php

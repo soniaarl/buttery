@@ -35,14 +35,14 @@
 				?>
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo esc_url( home_url( '/wp-content/uploads/icons/sonia-logo.png' ) ); ?>" alt="">
+						<?php get_template_part('images/logo') ?>
 					</a>
 				</h1>
 				<?php
 			else :
 				?>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php echo esc_url( home_url( '/wp-content/uploads/icons/sonia-logo.png' ) ); ?>" alt="">
+				<?php get_template_part('images/logo') ?>
 					</a>
 				</p>
 				<?php

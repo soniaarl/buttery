@@ -1,7 +1,6 @@
 // Portfolio page styles
 
 .post-type-archive-bt-projects {
-    text-align: center;
     .banner {
         @media(min-width: 1000px){
             margin-bottom: 40px;
@@ -25,6 +24,7 @@
         }
     }
     .project-card {
+        text-align: center;
         position: relative;
         max-width: 450px;
         margin: auto;
@@ -87,6 +87,7 @@
         }
         .content {
             display: flex;
+            flex-wrap: wrap;
         }
         .project-card {
             width: 300px;

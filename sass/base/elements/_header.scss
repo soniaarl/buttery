@@ -1,5 +1,5 @@
 .site-header {
-    background-color: #0E0E2B;
+    background-color: $darkblue;
     p {
         margin: 0;
     }
@@ -12,9 +12,12 @@
             color: white;
         }
     }
-    img{
+    svg {
         width: 10%;
         max-width: 60px;
+    }
+    svg path {
+        fill: $gold;
     }
     .site-title {
         padding: 10px 20px;
@@ -24,7 +27,7 @@
 
     @media (min-width: 1001px){
         .site-title {
-            img {
+            svg {
                 width: 60px;
             }
         }
