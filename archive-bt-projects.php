@@ -80,11 +80,11 @@ get_header();
 				<?php
 			}
 			wp_reset_postdata();
-		}
-		?>
+		}?>
+	
 
 	</div> <!-- end content -->
-	
+	<?php get_template_part('template-parts/scroll-top'); ?>
 	</main><!-- #main -->
 
 <?php

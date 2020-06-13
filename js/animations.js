@@ -60,6 +60,17 @@ jQuery(document).ready(function($) {
         } 
         });
 
+
+    // Add class to scroll to top button to change colour when it's on the footer
+    $(".site-footer").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            $(".scroll-top").addClass("lighten"); 
+        }else{
+            $(".scroll-top").removeClass("lighten");
+        }
+        });
+
     });
 
     /* --------------------- CLICKING ANIMATIONS --------------------- */
