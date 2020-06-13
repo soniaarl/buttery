@@ -84,7 +84,9 @@ get_header();
 	
 
 	</div> <!-- end content -->
+
 	<?php get_template_part('template-parts/scroll-top'); ?>
+	
 	</main><!-- #main -->
 
 <?php
