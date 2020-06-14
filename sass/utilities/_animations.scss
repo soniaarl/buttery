@@ -1,9 +1,14 @@
+.leftslide, .rightslide {
+  display: none;
+}
+
 .animate__pulse {
     color: white;
 }
 
 .animate__slideInLeft, .animate__slideInRight {
   --animate-duration: 2.5s;
+  display: block;
 }
 
 // Front-page portfolio button animation

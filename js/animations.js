@@ -38,28 +38,34 @@ jQuery(document).ready(function($) {
 
 
     // Home page
-    $(".leftslide").each(function(i, el) {
+    $(".designer").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
         el.addClass("animate__animated animate__slideInLeft"); 
         } 
     });
 
-    $(".rightslide").each(function(i, el) {
+    $(".developer").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
-            el.addClass("animate__animated animate__slideInRight"); 
+        el.addClass("animate__animated animate__slideInLeft"); 
         } 
-        });
+    });
 
-    // Portfolio Page
-    $(".fadeup").each(function(i, el) {
+    $(".mockup-image").each(function(i, el) {
         var el = $(el);
         if (el.visible(true)) {
-            el.addClass("animate__animated animate__fadeInUp"); 
+        el.addClass("animate__animated animate__slideInLeft"); 
         } 
-        });
-
+    });
+    
+    $(".colour-swatches").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+        el.addClass("animate__animated animate__slideInLeft"); 
+        } 
+    });
+    
 
     // Add class to scroll to top button to change colour when it's on the footer
     $(".site-footer").each(function(i, el) {

@@ -42,7 +42,7 @@ get_header();
 
 			<div class="skills-cards">
 			<!-- Designer -->
-			<section class="designer leftslide">
+			<section class="designer">
 			<?php if( have_rows('designer') ):
 					while( have_rows('designer') ): the_row(); 
 
@@ -69,7 +69,7 @@ get_header();
 			<?php endif; ?>
 
 			<!-- Developer -->
-			<section class="developer rightslide">
+			<section class="developer">
 			<?php if( have_rows('developer') ):
 					while( have_rows('developer') ): the_row(); 
 
