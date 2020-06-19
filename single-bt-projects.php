@@ -79,7 +79,7 @@ get_header();
 					<p class="design-tools">//<?php echo $tools?></p>
 					<p class="design-description"><?php echo $description?></p>
 					<!-- Check if image exists before outputting image tag -->
-					<?php if($image):?><img class="colour-swatches" src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
+					<?php if($image):?><img class="colour-swatches lightbox" src="<?php echo $image?>" alt="Colour swatches"><?php endif; ?>
 				<?php endif;?>
 
 				<!-- Mockups -->

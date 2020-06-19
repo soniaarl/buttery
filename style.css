@@ -512,7 +512,11 @@ textarea { width: 100%; }
 
 .single-bt-projects .content p { margin: 10px 0; }
 
-.single-bt-projects .content img { width: 100%; margin-top: 20px; }
+.single-bt-projects .content .colour-swatches { max-height: 150px; width: auto; text-align: center; margin: 30px auto; }
+
+.single-bt-projects .content .mockups { margin-top: 30px; }
+
+.single-bt-projects .content .mockups img { width: 100%; max-width: 700px; margin: 20px auto; }
 
 .single-bt-projects .project-brief h2 { margin-top: 0; }
 

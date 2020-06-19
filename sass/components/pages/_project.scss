@@ -20,9 +20,19 @@
         p {
             margin: 10px 0;
         }
-        img {
-            width: 100%;
-            margin-top: 20px;
+        .colour-swatches {
+            max-height: 150px;
+            width: auto;
+            text-align: center;
+            margin: 30px auto;
+        }
+        .mockups {
+            margin-top: 30px;
+            img {
+                width: 100%;
+                max-width: 700px;
+                margin: 20px auto;
+            }
         }
     }
     .project-brief {
