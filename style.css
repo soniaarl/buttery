@@ -512,17 +512,19 @@ textarea { width: 100%; }
 
 .single-bt-projects .content p { margin: 10px 0; }
 
-.single-bt-projects .content .colour-swatches { max-height: 150px; width: auto; text-align: center; margin: 30px auto; }
+.single-bt-projects .content .colour-swatches { width: 100%; text-align: center; margin: 30px auto; }
 
 .single-bt-projects .content .mockups { margin-top: 30px; }
 
-.single-bt-projects .content .mockups img { width: 100%; max-width: 700px; margin: 20px auto; }
+.single-bt-projects .content .mockups img { width: 100%; max-width: 800px; margin: 20px auto; }
 
 .single-bt-projects .project-brief h2 { margin-top: 0; }
 
 .single-bt-projects .link-btns { display: flex; text-align: center; justify-content: center; max-width: 800px; margin: auto; margin-bottom: 10px; margin-top: 30px; }
 
-.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 100%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; font-size: 4vw; }
+.single-bt-projects .link-btns a { text-decoration: none; color: #F1D895; background-color: #0E0E2B; border: 1px solid #F1D895; display: block; width: 100%; padding: 10px; border-radius: 10px; box-shadow: 1px 1px 3px 1px #ecececa4; font-size: 4vw; transition: 0.6s ease; }
+
+.single-bt-projects .link-btns a:hover { transition: 0.6s ease; background-color: #2d2d8b; }
 
 @media (min-width: 400px) { .single-bt-projects .link-btns a { font-size: 16px; } }
 
