@@ -146,14 +146,8 @@ function buttery_scripts() {
 	wp_enqueue_style( 'buttery-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'buttery-style', 'rtl', 'replace' );
 
-	// Enqueue JQuery for animations
-	wp_enqueue_script(
-        'bt-animations', 
-        get_template_directory_uri() . '/js/animations.js', 
-        array( 'jquery' ), 
-        '20200609', 
-        true 
-    );
+	// Enqueue jQuery for animations
+	wp_enqueue_script('bt-animations', get_template_directory_uri() . '/js/animations.js', array( 'jquery' ), '20200609', true);
 
 	// Scroll top JS files
 	wp_enqueue_script('buttery-scroll-top', get_template_directory_uri().'/js/scroll-top.js', '20200612', true);
