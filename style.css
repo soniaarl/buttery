@@ -641,7 +641,7 @@ textarea { width: 100%; }
 
 .page-id-184 .snowflake, .page-id-186 .snowflake { display: none; }
 
-.page-id-184 .popup .snowflake, .page-id-186 .popup .snowflake { display: block; color: #ffffff; font-size: 1.5em; font-family: Arial; text-shadow: 0 0 1px #000; }
+.page-id-184 .snowflake.popup, .page-id-186 .snowflake.popup { display: block; color: #ffffff; font-size: 1.5em; font-family: Arial; text-shadow: 0 0 1px #000; }
 
 @-webkit-keyframes snowflakes-fall { 0% { top: -10%; }
 	100% { top: 100%; } }

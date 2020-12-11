@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
         $("#animals").toggleClass("popup");
         $("#container").toggleClass("popup");
         $(".page-id-186").toggleClass("popup");
+        $(".snowflake").toggleClass("popup");
 
         // Control audio
         let music = document.getElementById("music");
