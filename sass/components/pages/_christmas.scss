@@ -1,16 +1,17 @@
-.page-id-184 { 
+:root {
+    --red-ribbon:#c92a2a;
+    --present: #ffc851;
+    --first-font: 'Heebo', sans-serif;
+    --second-font: 'Pacifico', cursive;
+    --body-font: 'Overlock', cursive;
+  }
+
+.page-id-184, .page-id-186{ 
     background-color: #c9acd1;
     padding: 0;
     margin: 0;
     transition: 1s;
 
-    :root {
-        --red-ribbon:#c92a2a;
-        --present: #ffc851;
-        --first-font: 'Heebo', sans-serif;
-        --second-font: 'Pacifico', cursive;
-        --body-font: 'Overlock', cursive;
-      }
       
       body.popup {
         background-color: #141138;
@@ -144,7 +145,7 @@
       .ribbon {
         width: 100px;
         position: absolute;
-        top: 27.5%;;
+        top: -9%;
         left: 50%;
         transform: translate(-50%);
         z-index: 3;
