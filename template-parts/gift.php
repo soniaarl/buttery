@@ -15,6 +15,14 @@ if( isset($_SESSION['Username'])){
         $message="<p>This is for abiii</p>
         <p>Second paragraph</p>";
     }
+    if(strtolower($_SESSION['Username'] == 'miguel')){
+        $message="<p>Hi Miguel</p>
+        <p>Merry Christmas to you</p>";
+    }
+    if(strtolower($_SESSION['Username'] == 'sonia')){
+        $message="<p>Hi Sonia</p>
+        <p>TEST TEST TESTTTT</p>";
+    }
 }
 
 ?>

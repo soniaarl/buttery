@@ -1,7 +1,13 @@
 <?php session_start(); /* Starts the session */
     /* Check Login form submitted */if(isset($_POST['Submit'])){
     /* Define username and associated password array */
-    $logins = array('jai' => 'jai01','abi' => 'abi01','trish' => 'trish01');
+    $logins = array(
+        'jai' => 'jai01',
+        'abi' => 'abi01',
+        'trish' => 'trish01',
+        'miguel' => 'password',
+        'sonia' => 'testing',
+    );
 
     /* Check and assign submitted Username and Password to new variable */
     $Username = isset($_POST['Username']) ? strtolower($_POST['Username']) : '';

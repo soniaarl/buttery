@@ -886,6 +886,7 @@
       
       input:focus, textarea:focus, select:focus{
         outline: none;
+        color: white;
       }
       
       .input-data{
@@ -918,8 +919,8 @@
       .input-data .underline{
         position: absolute;
         height: 2px;
-        width: 101%;
-        bottom: -4px;
+        width: 100%;
+        bottom: 0;
       }
       .input-data .underline:before{
         position: absolute;

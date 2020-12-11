@@ -688,7 +688,7 @@ textarea { width: 100%; }
 
 .page-id-184 input, .page-id-186 input { background-color: transparent; color: white; }
 
-.page-id-184 input:focus, .page-id-184 textarea:focus, .page-id-184 select:focus, .page-id-186 input:focus, .page-id-186 textarea:focus, .page-id-186 select:focus { outline: none; }
+.page-id-184 input:focus, .page-id-184 textarea:focus, .page-id-184 select:focus, .page-id-186 input:focus, .page-id-186 textarea:focus, .page-id-186 select:focus { outline: none; color: white; }
 
 .page-id-184 .input-data, .page-id-186 .input-data { height: 30px; width: 100%; position: relative; }
 
@@ -698,7 +698,7 @@ textarea { width: 100%; }
 
 .page-id-184 .wrapper .input-data label, .page-id-186 .wrapper .input-data label { position: absolute; bottom: 10px; left: 0; color: #ffffff; pointer-events: none; transition: all 0.3s ease; }
 
-.page-id-184 .input-data .underline, .page-id-186 .input-data .underline { position: absolute; height: 2px; width: 101%; bottom: -4px; }
+.page-id-184 .input-data .underline, .page-id-186 .input-data .underline { position: absolute; height: 2px; width: 100%; bottom: 0; }
 
 .page-id-184 .input-data .underline:before, .page-id-186 .input-data .underline:before { position: absolute; content: ""; height: 100%; width: 100%; background: #526fff; transform: scaleX(0); transform-origin: center; transition: transform 0.3s ease; }
 
