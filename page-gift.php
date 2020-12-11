@@ -12,7 +12,7 @@
  * @package buttery
  */
 
-get_header();
+get_template_part( 'template-parts/no-header' );
 ?>
 
 	<main id="primary" class="site-main">

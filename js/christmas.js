@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(document).ready(function($) {
     $("#box").click(function(){
         // Control pop up/box opening
         $("#box").toggleClass("popup");
