@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Pacifico&family=Overlock&display=swap" rel="stylesheet">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125324556-3"></script>
 	<script></script>

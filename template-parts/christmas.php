@@ -4,7 +4,7 @@
     $logins = array('jai' => 'jai01','abi' => 'abi01','trish' => 'trish01');
 
     /* Check and assign submitted Username and Password to new variable */
-    $Username = isset($_POST['Username']) ? $_POST['Username'] : '';
+    $Username = isset($_POST['Username']) ? strtolower($_POST['Username']) : '';
     $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 
     /* Check Username and Password existence in defined array */
@@ -13,7 +13,7 @@
     /* Success: Set session variables and redirect to Protected page  */
     $_SESSION['Username']=$_POST['Username'];
     $_SESSION['UserData']['Username']=$logins[$Username];
-    header("location: gift");
+    header("location:gift");
     exit;
     } else {
     /*Unsuccessful attempt: Set error message */

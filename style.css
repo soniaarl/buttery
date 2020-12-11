@@ -430,7 +430,7 @@ textarea { width: 100%; }
 
 .page-id-184 .merry, .page-id-186 .merry { display: none; }
 
-.page-id-184 .popup .merry, .page-id-186 .popup .merry { display: block; font-family: var(--second-font); position: absolute; bottom: 3%; width: 100%; text-align: center; color: white; letter-spacing: 3px; font-weight: 100; font-size: 35px; -webkit-animation: glow 1s ease-in-out infinite alternate; animation: glow 1s ease-in-out infinite alternate; }
+.page-id-184 .popup .merry, .page-id-186 .popup .merry { display: block; font-family: var(--second-font); position: absolute; bottom: 3%; width: 100%; text-align: center; color: white; letter-spacing: 3px; font-weight: 100; font-size: 35px; -webkit-animation: glow 1s ease-in-out infinite alternate; animation: glow 1s ease-in-out infinite alternate; text-transform: capitalize; }
 
 @-webkit-keyframes glow { from { text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073; }
 	to { text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6; } }
