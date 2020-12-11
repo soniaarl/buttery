@@ -455,7 +455,7 @@ textarea { width: 100%; }
 
 .page-id-184 .popup.animals, .page-id-186 .popup.animals { bottom: 34%; }
 
-.page-id-184 .ribbon, .page-id-186 .ribbon { width: 100px; position: absolute; top: -9%; left: 50%; transform: translate(-50%); z-index: 3; transition: 0.5s; }
+.page-id-184 .ribbon, .page-id-186 .ribbon { width: 100px; height: 100px; position: absolute; top: 32.5%; left: 50%; transform: translate(-50%); z-index: 3; transition: 0.5s; }
 
 .page-id-184 .ribbon path, .page-id-186 .ribbon path { fill: var(--red-ribbon); }
 
