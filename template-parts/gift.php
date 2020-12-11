@@ -19,7 +19,7 @@ if( isset($_SESSION['Username'])){
 
 ?>
 
-    <audio src="./audio/music.mp3" id="music"></audio>
+    <audio src="<?php echo esc_url(home_url('/wp-content/themes/buttery/audio/music.mp3')); ?>" id="music"></audio>
  
     <div class="container" id="container">
     <svg class="ribbon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
