@@ -213,6 +213,7 @@
       input.view-card {
         display: none;
         height: 40px;
+        padding: 10px;
       }
       
       .popup .view-card {
@@ -940,6 +941,7 @@
           color: #ffffff;
       }
       .submit {
+          height: inherit;
           width: 150px;
           border: none;
           color: #ffffff;
@@ -948,6 +950,7 @@
           left: 50%;
           transform: translate(-50%);
           transition: 1s;
+          padding: 10px;
       }
       
       .submit:hover {

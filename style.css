@@ -485,7 +485,7 @@ textarea { width: 100%; }
 
 .page-id-184 .card.popup, .page-id-186 .card.popup { display: block; }
 
-.page-id-184 input.view-card, .page-id-186 input.view-card { display: none; height: 40px; }
+.page-id-184 input.view-card, .page-id-186 input.view-card { display: none; height: 40px; padding: 10px; }
 
 .page-id-184 .popup .view-card, .page-id-186 .popup .view-card { display: block; top: 10%; }
 
@@ -706,7 +706,7 @@ textarea { width: 100%; }
 
 .page-id-184 .login, .page-id-186 .login { text-align: center; padding-top: 15px; color: #ffffff; }
 
-.page-id-184 .submit, .page-id-186 .submit { width: 150px; border: none; color: #ffffff; border: 1px solid white; position: absolute; left: 50%; transform: translate(-50%); transition: 1s; }
+.page-id-184 .submit, .page-id-186 .submit { height: inherit; width: 150px; border: none; color: #ffffff; border: 1px solid white; position: absolute; left: 50%; transform: translate(-50%); transition: 1s; padding: 10px; }
 
 .page-id-184 .submit:hover, .page-id-186 .submit:hover { color: #526fff; border: 1px solid #526fff; cursor: pointer; }
 

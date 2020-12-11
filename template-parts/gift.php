@@ -7,11 +7,11 @@ exit;
 
 // Switch content depending on the user
 if( isset($_SESSION['Username'])){
-    if($_SESSION['Username'] == 'jai'){
+    if(strtolower($_SESSION['Username']) == 'jai'){
         $message="<p>This is for jai</p>
         <p>Second paragraph</p>";
     }
-    if($_SESSION['Username'] == 'abi'){
+    if(strtolower($_SESSION['Username'] == 'abi')){
         $message="<p>This is for abiii</p>
         <p>Second paragraph</p>";
     }
