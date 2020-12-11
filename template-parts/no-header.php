@@ -29,8 +29,6 @@
 
 	gtag('config', 'UA-125324556-3');
 	</script>
-	<script src="/js/christmas.js"></script>
-	
 	<?php wp_head(); ?>
 </head>
 

@@ -422,7 +422,7 @@ textarea { width: 100%; }
 
 .page-id-184, .page-id-186 { background-color: #c9acd1; padding: 0; margin: 0; transition: 1s; /* First copy */ /* Merry Christmas */ /* Glowing text */ /* Container */ /* Present */ /* Ribbon wrapping present */ /* On click classes */ /* Ribbon */ /* Animate animals */ /* Card */ /* Card text */ /* Scroll bar styles */ /* width */ /* Track */ /* Handle */ /* ANIMALS */ /* ========== ANIMAL ========== */ /* Source: https://dev.to/benpai/cute-css-animals-igp */ /* Christmas hat */ /* ========== BEAR ========== */ /* ========== PIG ========== */ /* ========== PANDA ========== */ /* ========== MOUSE ========== */ /* Snowflakes */ /* Source: https://codepen.io/codeconvey/pen/xRzQay */ /* customizable snowflake styling */ /* FORM STYLES */ }
 
-.page-id-184 body.popup, .page-id-186 body.popup { background-color: #141138; }
+.page-id-184.popup, .page-id-186.popup { background-color: #141138; }
 
 .page-id-184 .open, .page-id-186 .open { margin-top: 50px; text-align: center; transition: 1s; font-family: var(--first-font); }
 

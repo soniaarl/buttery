@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
         $("#box").toggleClass("popup");
         $("#animals").toggleClass("popup");
         $("#container").toggleClass("popup");
-        $("#body").toggleClass("popup");
+        $(".page-id-186").toggleClass("popup");
 
         // Control audio
         let music = document.getElementById("music");
