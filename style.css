@@ -420,11 +420,11 @@ textarea { width: 100%; }
 --------------------------------------------- */
 :root { --red-ribbon:#c92a2a; --present: #ffc851; --first-font: 'Heebo', sans-serif; --second-font: 'Pacifico', cursive; --body-font: 'Overlock', cursive; }
 
-.page-id-184, .page-id-186 { background-color: #c9acd1; padding: 0; margin: 0; transition: 1s; /* First copy */ /* Merry Christmas */ /* Glowing text */ /* Container */ /* Present */ /* Ribbon wrapping present */ /* On click classes */ /* Ribbon */ /* Animate animals */ /* Card */ /* Card text */ /* Scroll bar styles */ /* width */ /* Track */ /* Handle */ /* ANIMALS */ /* ========== ANIMAL ========== */ /* Source: https://dev.to/benpai/cute-css-animals-igp */ /* Christmas hat */ /* ========== BEAR ========== */ /* ========== PIG ========== */ /* ========== PANDA ========== */ /* ========== MOUSE ========== */ /* Snowflakes */ /* Source: https://codepen.io/codeconvey/pen/xRzQay */ /* customizable snowflake styling */ /* FORM STYLES */ }
+.page-id-184, .page-id-186 { background-color: #c9acd1; padding: 0; margin: 0; transition: transform 1s linear; /* First copy */ /* Merry Christmas */ /* Glowing text */ /* Container */ /* Present */ /* Ribbon wrapping present */ /* On click classes */ /* Ribbon */ /* Animate animals */ /* Card */ /* Card text */ /* Scroll bar styles */ /* width */ /* Track */ /* Handle */ /* ANIMALS */ /* ========== ANIMAL ========== */ /* Source: https://dev.to/benpai/cute-css-animals-igp */ /* Christmas hat */ /* ========== BEAR ========== */ /* ========== PIG ========== */ /* ========== PANDA ========== */ /* ========== MOUSE ========== */ /* Snowflakes */ /* Source: https://codepen.io/codeconvey/pen/xRzQay */ /* customizable snowflake styling */ /* FORM STYLES */ }
 
 .page-id-184.popup, .page-id-186.popup { background-color: #141138; }
 
-.page-id-184 .open, .page-id-186 .open { margin-top: 50px; text-align: center; transition: 1s; font-family: var(--first-font); }
+.page-id-184 .open, .page-id-186 .open { margin-top: 50px; text-align: center; will-change: transform; transition: transform 1s linear; font-family: var(--first-font); }
 
 .page-id-184 .popup .open, .page-id-186 .popup .open { opacity: 0; }
 
@@ -441,9 +441,9 @@ textarea { width: 100%; }
 
 .page-id-184 .b1, .page-id-184 .b2, .page-id-186 .b1, .page-id-186 .b2 { background-color: var(--present); height: 8px; width: 100px; position: relative; }
 
-.page-id-184 .b1, .page-id-186 .b1 { right: 100px; transform: rotate(180deg); transition: 1s; transform-origin: right; }
+.page-id-184 .b1, .page-id-186 .b1 { right: 100px; transform: rotate(180deg); will-change: transform; transition: transform 1s ease; transform-origin: right; }
 
-.page-id-184 .b2, .page-id-186 .b2 { left: 200px; bottom: 8px; transition: 1s; transform: rotate(-180deg); transform-origin: left; }
+.page-id-184 .b2, .page-id-186 .b2 { left: 200px; bottom: 8px; will-change: transform; transition: transform 1s ease; transform: rotate(-180deg); transform-origin: left; }
 
 .page-id-184 .vertical, .page-id-186 .vertical { width: 15px; height: 120px; background-color: var(--red-ribbon); position: absolute; left: 50%; top: 0; transform: translate(-50%); z-index: 1; }
 
@@ -469,17 +469,25 @@ textarea { width: 100%; }
 
 .page-id-184 .popup .mouse, .page-id-186 .popup .mouse { -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation: MoveDownUp 1.5s linear infinite; animation: MoveDownUp 1.5s linear infinite; }
 
-@-webkit-keyframes MoveUpDown { 0%, 100% { transform: scale(0.5) translateY(10%); }
-	50% { transform: scale(0.5) translateY(-15%); } }
+@-webkit-keyframes MoveUpDown { 0%, 100% {
+		transform: scale(0.5) translateY(10%); }
+	50% {
+		transform: scale(0.5) translateY(-15%); } }
 
-@keyframes MoveUpDown { 0%, 100% { transform: scale(0.5) translateY(10%); }
-	50% { transform: scale(0.5) translateY(-15%); } }
+@keyframes MoveUpDown { 0%, 100% {
+		transform: scale(0.5) translateY(10%); }
+	50% {
+		transform: scale(0.5) translateY(-15%); } }
 
-@-webkit-keyframes MoveDownUp { 0%, 100% { transform: scale(0.5) translateY(-10%); }
-	50% { transform: scale(0.5) translateY(15%); } }
+@-webkit-keyframes MoveDownUp { 0%, 100% {
+		transform: scale(0.5) translateY(-10%); }
+	50% {
+		transform: scale(0.5) translateY(15%); } }
 
-@keyframes MoveDownUp { 0%, 100% { transform: scale(0.5) translateY(-10%); }
-	50% { transform: scale(0.5) translateY(15%); } }
+@keyframes MoveDownUp { 0%, 100% {
+		transform: scale(0.5) translateY(-10%); }
+	50% {
+		transform: scale(0.5) translateY(15%); } }
 
 .page-id-184 .card, .page-id-186 .card { display: none; }
 
@@ -519,7 +527,7 @@ textarea { width: 100%; }
 
 .page-id-184 ::-webkit-scrollbar-thumb, .page-id-186 ::-webkit-scrollbar-thumb { background: #d0e8ff; box-shadow: inset 0 0 2px #699bff; border-radius: 4px; }
 
-.page-id-184 .animals, .page-id-186 .animals { margin: 0; display: flex; justify-content: center; align-items: flex-end; height: 100px; position: absolute; bottom: 22%; left: 50%; transform: translate(-50%); transition: 1.2s; z-index: -1; }
+.page-id-184 .animals, .page-id-186 .animals { margin: 0; display: flex; justify-content: center; align-items: flex-end; height: 100px; position: absolute; bottom: 22%; left: 50%; transform: translate(-50%); will-change: transform; transition: transform 1.2s linear; z-index: -1; }
 
 .page-id-184 .animal, .page-id-186 .animal { height: 170px; width: 50px; min-width: 50px; background-color: #000; border-radius: 100px 100px 0 0; position: relative; transform: scale(0.5); }
 
@@ -533,7 +541,7 @@ textarea { width: 100%; }
 
 .page-id-184 .animal label, .page-id-186 .animal label { font-family: sans-serif; display: block; text-align: center; width: 14px; top: 100px; left: calc(50% - 7px); }
 
-.page-id-184 .hat, .page-id-184 .top, .page-id-184 .fluff, .page-id-186 .hat, .page-id-186 .top, .page-id-186 .fluff { opacity: 0; transition: 1s; }
+.page-id-184 .hat, .page-id-184 .top, .page-id-184 .fluff, .page-id-186 .hat, .page-id-186 .top, .page-id-186 .fluff { opacity: 0; will-change: transform; transition: transform 1s linear; }
 
 .page-id-184 .popup .hat, .page-id-184 .popup .top, .page-id-184 .popup .fluff, .page-id-186 .popup .hat, .page-id-186 .popup .top, .page-id-186 .popup .fluff { opacity: 1; }
 
@@ -696,17 +704,17 @@ textarea { width: 100%; }
 
 .page-id-184 .input-data input:focus ~ label, .page-id-184 .input-data input:valid ~ label, .page-id-186 .input-data input:focus ~ label, .page-id-186 .input-data input:valid ~ label { transform: translateY(-20px); font-size: 15px; color: #526fff; }
 
-.page-id-184 .wrapper .input-data label, .page-id-186 .wrapper .input-data label { position: absolute; bottom: 10px; left: 0; color: #ffffff; pointer-events: none; transition: all 0.3s ease; }
+.page-id-184 .wrapper .input-data label, .page-id-186 .wrapper .input-data label { position: absolute; bottom: 10px; left: 0; color: #ffffff; pointer-events: none; will-change: transform; transition: transform all 0.3s ease; }
 
 .page-id-184 .input-data .underline, .page-id-186 .input-data .underline { position: absolute; height: 2px; width: 100%; bottom: 0; }
 
-.page-id-184 .input-data .underline:before, .page-id-186 .input-data .underline:before { position: absolute; content: ""; height: 100%; width: 100%; background: #526fff; transform: scaleX(0); transform-origin: center; transition: transform 0.3s ease; }
+.page-id-184 .input-data .underline:before, .page-id-186 .input-data .underline:before { position: absolute; content: ""; height: 100%; width: 100%; background: #526fff; transform: scaleX(0); transform-origin: center; will-change: transform; transition: transform 0.3s ease; }
 
 .page-id-184 .input-data input:focus ~ .underline:before, .page-id-184 .input-data input:valid ~ .underline:before, .page-id-186 .input-data input:focus ~ .underline:before, .page-id-186 .input-data input:valid ~ .underline:before { transform: scaleX(1); }
 
 .page-id-184 .login, .page-id-186 .login { text-align: center; padding-top: 15px; color: #ffffff; }
 
-.page-id-184 .submit, .page-id-186 .submit { height: inherit; width: 150px; border: none; color: #ffffff; border: 1px solid white; position: absolute; left: 50%; transform: translate(-50%); transition: 1s; padding: 10px; }
+.page-id-184 .submit, .page-id-186 .submit { height: inherit; width: 150px; border: none; color: #ffffff; border: 1px solid white; position: absolute; left: 50%; transform: translate(-50%); will-change: transform; transition: transform 1s linear; padding: 10px; }
 
 .page-id-184 .submit:hover, .page-id-186 .submit:hover { color: #526fff; border: 1px solid #526fff; cursor: pointer; }
 

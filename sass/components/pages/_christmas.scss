@@ -10,7 +10,7 @@
     background-color: #c9acd1;
     padding: 0;
     margin: 0;
-    transition: 1s;
+    transition: transform 1s linear;
 
       
       &.popup {
@@ -21,7 +21,8 @@
       .open {
         margin-top: 50px;
         text-align: center;
-        transition: 1s;
+        will-change: transform;
+        transition: transform 1s linear;
         font-family: var(--first-font)
       }
       
@@ -81,6 +82,7 @@
           position: absolute;
           bottom: 15%;
           left: 50%;
+          -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
       }
       
@@ -93,15 +95,18 @@
       
       .b1 {
           right: 100px;
+          -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-          transition: 1s;
+          will-change: transform;
+          transition: transform 1s ease;
           transform-origin: right;
       }
       
       .b2 {
           left: 200px;
           bottom: 8px;
-          transition: 1s;
+          will-change: transform;
+          transition: transform 1s ease;
           transform: rotate(-180deg);
           transform-origin: left;
       }
@@ -114,6 +119,7 @@
         position: absolute;
         left: 50%;
         top: 0;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         z-index: 1;
       }
@@ -135,7 +141,8 @@
       }
       
       .box.popup .b2 {
-          transform: rotate(50deg);
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
       }
       
       .popup.animals {
@@ -149,6 +156,7 @@
         position: absolute;
         top: 32.5%;
         left: 50%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         z-index: 3;
         transition: 0.5s;
@@ -185,18 +193,22 @@
       
       @keyframes MoveUpDown {
         0%, 100% {
+          -webkit-transform: scale(0.5) translateY(10%);
           transform: scale(0.5) translateY(10%);
         }
         50% {
+          -webkit-transform: scale(0.5) translateY(-15%);
           transform: scale(0.5) translateY(-15%);
         }
       }
       
       @keyframes MoveDownUp {
         0%, 100% {
+          -webkit-transform: scale(0.5) translateY(-10%);
           transform: scale(0.5) translateY(-10%);
         }
         50% {
+          -webkit-transform: scale(0.5) translateY(15%);
           transform: scale(0.5) translateY(15%);
         }
       }
@@ -227,7 +239,8 @@
         top: 16px;
         right: 7%;
         font-size: 20px;
-          margin: 0;
+        margin: 0;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         color: black;
         font-family: var(--body-font);
@@ -247,6 +260,7 @@
         height: 45%;
         padding: 25px;
         animation: Grow 1s linear;
+        -webkit-transform: rotate(180deg) translate(50%);
         transform: rotate(180deg) translate(50%);
         transform-origin: top;
       }
@@ -258,6 +272,7 @@
         top: 50%;
         left: 50%;
         width: 90%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         height: 45%;
         padding: 25px;
@@ -279,6 +294,7 @@
         z-index: 9;
         width: 83%;
         left: 51%;
+        -webkit-transform: translate(-50%);
         transform: translate(-50%);
         top: 10%;
         height: 80%;
@@ -339,8 +355,10 @@
           position: absolute;
           bottom: 22%;
           left: 50%;
+          -webkit-transform: translate(-50%);
           transform: translate(-50%);
-          transition: 1.2s;
+          will-change: transform;
+          transition: transform 1.2s linear;
           z-index: -1;
       }
       /* ========== ANIMAL ========== */
@@ -352,6 +370,7 @@
           background-color: #000;
           border-radius: 100px 100px 0 0;
           position: relative;
+          -webkit-transform: scale(0.5);
           transform: scale(0.5);
         }
         .animal:before,
@@ -387,7 +406,8 @@
         /* Christmas hat */
         .hat, .top, .fluff {
           opacity: 0;
-          transition: 1s;
+          will-change: transform;
+          transition: transform 1s linear;
         }
       
         .popup .hat, .popup .top, .popup .fluff {
@@ -398,6 +418,7 @@
           border-bottom: 100px solid red;
           border-left: 35px solid transparent;
           border-right: 35px solid transparent;
+          -webkit-transform: scale(0.5);
           transform: scale(0.5);
           top: -70px;
           left: -10px;
@@ -490,6 +511,7 @@
           left: 7px;
           border: 2px solid #000;
           border-bottom: 0;
+          -webkit-transform: rotate(110deg);
           transform: rotate(110deg);
         }
         .animal.bear .hand2 {
@@ -500,6 +522,7 @@
           right: 7px;
           border: 2px solid #000;
           border-bottom: 0;
+          -webkit-transform: rotate(-110deg);
           transform: rotate(-110deg);
         }
         
@@ -557,6 +580,7 @@
           left: 7px;
           border: 2px solid #333;
           border-bottom: 0;
+          -webkit-transform: rotate(110deg);
           transform: rotate(110deg);
           background: linear-gradient(to top, transparent, transparent 50%, var(--alt-color) 50%);
         }
@@ -567,6 +591,7 @@
           right: 7px;
           border: 2px solid #333;
           border-bottom: 0;
+          -webkit-transform: rotate(-110deg);
           transform: rotate(-110deg);
           background: linear-gradient(to top, transparent, transparent 50%, var(--alt-color) 50%);
         }
@@ -914,7 +939,8 @@
         left: 0;
         color: #ffffff;
         pointer-events: none;
-        transition: all 0.3s ease;
+        will-change: transform;
+        transition: transform all 0.3s ease;
       }
       .input-data .underline{
         position: absolute;
@@ -930,6 +956,7 @@
         background: #526fff;
         transform: scaleX(0);
         transform-origin: center;
+        will-change: transform;
         transition: transform 0.3s ease;
       }
       .input-data input:focus ~ .underline:before,
@@ -950,7 +977,8 @@
           position: absolute;
           left: 50%;
           transform: translate(-50%);
-          transition: 1s;
+          will-change: transform;
+          transition: transform 1s linear;
           padding: 10px;
       }
       
